@@ -1,0 +1,120 @@
+{
+    "name": "uky-web/drupal-project",
+    "description": "Project template for Drupal 8 projects with composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors":[
+        {
+          "name": "Nicole Sand",
+          "email": "nicole.sand@uky.edu",
+          "role": "Developer"
+        },
+        {
+          "name": "Andy Shooner",
+          "email": "andrew.shooner@uky.edu",
+          "role": "Developer"
+        },
+        {
+          "name": "Jason Ullstam",
+          "email": "jason.ullstam@uky.edu",
+          "role": "Developer"
+        }
+      ],
+    "repositories": [
+    {
+        "type": "composer",
+        "url": "https://satis.uky.dev"
+    },
+    {
+        "type": "composer",
+        "url": "https://packages.drupal.org/8"
+    },
+        {
+        "type": "composer",
+        "url": "https://asset-packagist.org"
+    }
+    ],
+    "require": {
+        "php": ">=7.0.8",
+        "composer/installers": "^1.2",
+        "oomphinc/composer-installers-extender": "^1.0",
+        "cweagans/composer-patches": "^1.6.5",
+        "drupal/console": "^1.0.2",
+        "drupal/core-composer-scaffold": "^8.8.0",
+        "drush/drush": "^9.7.1 | ^10.0.0",
+        "vlucas/phpdotenv": "^4.0",
+        "webflo/drupal-finder": "^1.0.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "uky-web/simple_site":"^0.1.3"
+    },
+    "require-dev": {
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "gitlab-token":{
+          "gitlab.com":"Zhqzs6MLWDrAyyR9fif4"
+        }
+      },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "cd web/themes/custom/ukd8 && npm install"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
+            "cd web/themes/custom/ukd8 && npm install"
+        ]
+    },
+    "extra": {
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-types": [
+            "npm-asset",
+            "bower-asset",
+            "drupal-custom-profile",
+            "drupal-custom-module",
+            "drupal-custom-theme"
+        ],
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
+            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:npm-asset",
+                "type:bower-asset"
+            ]
+        }
+    }
+}
