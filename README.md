@@ -22,12 +22,29 @@ When installing the given `composer.json` some tasks are taken care of:
 * Creates environment variables based on your .env file. See [.env.example](.env.example).
 
 
-## Updating Drupal Core
-It is recommended that you to allow the Installation Profile to manage the version of Drupal Core.
+## UK Specific Modifications
+This version of the Drupal Project makes the following modifications to the default drupal-composer project
 
+* Adds the UK composer repository (satis.uky.dev)
+* Adds the UK Installation Profile as a requirement
+* Removes Drupal Core as a requirement (it is managed by the Installation Profile)
+* Adds additional installer types for npm, bower, and custom drupal themes, modules, and profiles. 
+* Adds specific installer paths for those new installer types.
+* Runs npm install specifically for the UK base theme.
+
+## Managing Drupal Core
+If your site project uses the UK installation profie, it's recommended to allow the installation profile to define the Drupal Core dependency. If you use this project template without the UK installation profile, you will need to require Drupal Core in the projec template's composer.json file. See below for additional considerations.
+
+### Scaffolding Files
+Some files managed in the Drupal Core project need to be installed outside of that package's directory, in the root of your site. This is accomplished with the `drupal/core-composer-scaffold` package. This package should be required alongside Drupal Core, and is required by the installation profile. If you remove the installation profile from this projec template, or add Drupal Core, you should also require the core-composer-scaffold package.
 
 
 ## FAQ
 
+### What do I commit into my project's repository?
+After installing via `composer install`, you should commit the resulting files as the included `.gitignore` is configured. 
+
 ### Should I commit the contrib and custom modules I download?
 No. Your project should maintain its dependencies (such as additional modules or themes) using composer. 
+
+###
