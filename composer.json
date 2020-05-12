@@ -78,7 +78,8 @@
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
-            }
+            },
+            "gitignore": true
         },
         "installer-types": [
             "npm-asset",
