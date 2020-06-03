@@ -79,7 +79,10 @@
             "locations": {
                 "web-root": "web/"
             },
-            "gitignore": true
+            "gitignore": true,
+            "file-mapping": {
+                "[web-root]/sites/default/default.settings.php": false
+            }
         },
         "installer-types": [
             "npm-asset",
