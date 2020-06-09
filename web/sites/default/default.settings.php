@@ -750,14 +750,14 @@ $settings['entity_update_backup'] = TRUE;
  * information from env variables. See .env-example for more info.
  */
  $databases['default']['default'] = [
-   'database' => getenv('MYSQL_DATABASE'),
+   'database' => getenv('MYSQL_DATABASE') ?: 'drupal',
    'driver' => 'mysql',
-   'host' => getenv('MYSQL_HOSTNAME'),
+   'host' => getenv('MYSQL_HOSTNAME' ?: 'mysql'),
    'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-   'password' => getenv('MYSQL_PASSWORD'),
-   'port' => getenv('MYSQL_PORT'),
+   'password' => getenv('MYSQL_PASSWORD') ?: 'drupal',
+   'port' => getenv('MYSQL_PORT') ?: '3306',
    'prefix' => '',
-   'username' => getenv('MYSQL_USER'),
+   'username' => getenv('MYSQL_USER') ?: 'drupal'
  ];
 
 /**
