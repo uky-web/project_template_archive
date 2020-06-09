@@ -32,6 +32,7 @@ This version of the Drupal Project makes the following modifications to the defa
 * Adds specific installer paths for those new installer types.
 * Runs npm install specifically for the UK base theme.
 * Provides a default.settings.php that enables local settings files, and loads database configuration values from environment variables.
+* Provides default database connection settings that correspond to the `mysql` service available in the [Dev Container](https://gitlab.com/uky-web/university-web-platform/drupal-8/devcontainer).
 
 ## Managing Drupal Core
 If your site project uses the UK installation profie, it's recommended to allow the installation profile to define the Drupal Core dependency. If you use this project template without the UK installation profile, you will need to require Drupal Core in the projec template's composer.json file. See below for additional considerations.
