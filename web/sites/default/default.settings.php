@@ -520,7 +520,7 @@ if ($settings['hash_salt']) {
  * See https://www.drupal.org/documentation/modules/file for more information
  * about securing private files.
  */
-# $settings['file_private_path'] = 'sites/default/files/private';
+ $settings['file_private_path'] = 'sites/default/files/private';
 
 /**
  * Temporary file path:
@@ -709,8 +709,9 @@ $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
 /**
  $settings['trusted_host_patterns'] = [
-        '^SITENAME\.uky\.edu$',
-        '^.+\.SITENAME\.uky\.edu$',
+        '^uky\.edu$',
+        '^.+\.uky\.edu$',
+        '^.+\.uky\.dev$',
 ];
 */
 
