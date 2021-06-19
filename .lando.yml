@@ -1,0 +1,31 @@
+name: project-template
+recipe: drupal8
+excludes:
+  - drush/contrib/
+  - vendor/
+  - web/core/
+  - web/modules/contrib/
+  - web/themes/contrib/
+  - web/profiles/contrib/
+  - web/modules/custom/
+  - web/themes/custom/
+  - web/profiles/custom/
+  - web/libraries/
+config:
+  webroot: web
+  composer_version: '1.10.1'
+
+services:
+  appserver:
+    build_as_root:
+      - curl -sL https://deb.nodesource.com/setup_10.x | bash -
+      - apt install -y nodejs
+tooling:
+  site-install:
+    service: appserver
+    description: Runs composer install and drush site-install
+    cmd:
+      - composer install
+      - drush site-install -y
+      - drush user:password admin "admin"
+      - echo "User 'admin'; password 'admin'"
