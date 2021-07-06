@@ -1,0 +1,92 @@
+uuid: 5d314fec-7195-4f77-a41a-f2eb914ac93e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.carousel.field_body
+    - field.field.paragraph.carousel.field_collection_items
+    - field.field.paragraph.carousel.field_headline_group
+    - field.field.paragraph.carousel.field_theme_carousel_centered
+    - field.field.paragraph.carousel.field_theme_color_scheme
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - entity_browser_entity_form
+    - entity_reference_widget_helpers
+    - field_group
+    - headline_group
+    - inline_entity_form
+    - text
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_theme_carousel_centered
+        - field_theme_color_scheme
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
+_core:
+  default_config_hash: vFKZO7OD8EL_JEh8qkAUATcLWEsvdqON3eTdD2xqbQE
+id: paragraph.carousel.default
+targetEntityType: paragraph
+bundle: carousel
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_collection_items:
+    weight: 3
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: slide
+      label_plural: slides
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+      entity_reference_widget_helpers:
+        use_dropdown: '1'
+        dropdown_if_less: '50'
+        collection_link: 0
+    type: inline_entity_form_complex
+    region: content
+  field_headline_group:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_headline_only
+    region: content
+  field_theme_carousel_centered:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_theme_color_scheme:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,52 @@
+uuid: cabd434c-caa4-4511-a211-368cb218cccb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_teasers.field_collection_items
+    - field.field.paragraph.custom_teasers.field_headline_group
+    - paragraphs.paragraphs_type.custom_teasers
+  module:
+    - entity_browser_entity_form
+    - entity_reference_widget_helpers
+    - headline_group
+    - inline_entity_form
+_core:
+  default_config_hash: gTJCSBgl4b_wLQh-K4XwwazQHJNlqsM03w4xXLQoZxQ
+id: paragraph.custom_teasers.default
+targetEntityType: paragraph
+bundle: custom_teasers
+mode: default
+content:
+  field_collection_items:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: teaser
+      label_plural: teasers
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+      entity_reference_widget_helpers:
+        use_dropdown: '1'
+        dropdown_if_less: '50'
+        collection_link: 0
+    type: inline_entity_form_complex
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_headline_only
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

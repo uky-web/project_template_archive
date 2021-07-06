@@ -1,0 +1,12 @@
+uuid: 895993a0-c444-49d9-9725-2a5630f6a35e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: QqJjqCYaTLfDkmENuvtyOqE1yDv6jWjYdhyuvlWkEAk
+id: media.preview
+label: Preview
+targetEntityType: media
+cache: true

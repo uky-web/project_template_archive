@@ -1,0 +1,30 @@
+uuid: 7cba3312-27dc-4556-80d3-b10cf200ce85
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.custom_teaser
+    - field.storage.paragraph.field_collection_items
+    - paragraphs.paragraphs_type.custom_teasers
+_core:
+  default_config_hash: OJDdRhViNhzaTmuy8Ev6srFyNhu9dqx5UdcPtU6svH0
+id: paragraph.custom_teasers.field_collection_items
+field_name: field_collection_items
+entity_type: paragraph
+bundle: custom_teasers
+label: 'Grid Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      custom_teaser: custom_teaser
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

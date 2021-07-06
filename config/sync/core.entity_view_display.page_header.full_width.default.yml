@@ -1,0 +1,78 @@
+uuid: c4d23f13-4903-4644-8def-267015a093b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.full_width
+    - field.field.page_header.full_width.field_cta_link
+    - field.field.page_header.full_width.field_headline_group
+    - field.field.page_header.full_width.field_media
+    - field.field.page_header.full_width.field_secondary_link
+    - field.field.page_header.full_width.field_secondary_media
+    - field.field.page_header.full_width.field_theme_color_scheme
+  module:
+    - headline_group
+    - link
+_core:
+  default_config_hash: L8vSvL7gnT9X5FY2npIV6GRH0Zlk1QFG5gYgEc8nFAQ
+id: page_header.full_width.default
+targetEntityType: page_header
+bundle: full_width
+mode: default
+content:
+  field_cta_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h1
+      headline_group_class: headline-group
+      headline_group_bem: '1'
+      headline_group_anchor: false
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+  field_media:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: 16x9
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_secondary_link:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_secondary_media:
+    type: entity_reference_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_theme_color_scheme: true
+  title: true

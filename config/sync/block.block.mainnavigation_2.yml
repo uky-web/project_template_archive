@@ -1,0 +1,40 @@
+uuid: aab12c0d-0196-4bc4-9687-226347e600b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - ukd8
+_core:
+  default_config_hash: Yv06g_SDLK2BOt1VOl29dEcY5IZeyfFMkRLFPMqy94Q
+id: mainnavigation_2
+theme: ukd8
+region: mobile_tab_section
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Section navigation (mobile)'
+  provider: menu_block
+  label_display: '0'
+  follow: true
+  follow_parent: active
+  level: 2
+  depth: 0
+  expand_all_items: false
+  parent: 'main:'
+  suggestion: mobile
+  label_type: block
+  label_link: false
+  expand: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: ''
+    context_mapping: {  }

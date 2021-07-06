@@ -1,0 +1,21 @@
+uuid: c2598c1e-45a6-4393-9e90-5d79b3b24c7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - link
+_core:
+  default_config_hash: isAQ7icXJwMOCc5f5pIVPHjxm-dTC4rwbW2w2Pgfha0
+id: page_header.field_cta_link
+field_name: field_cta_link
+entity_type: page_header
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

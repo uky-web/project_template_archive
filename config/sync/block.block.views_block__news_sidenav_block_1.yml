@@ -1,0 +1,33 @@
+uuid: 825ac2e1-1f5c-45f7-9488-51049de8a3d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.news_node
+    - views.view.news_sidenav
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - ukd8
+_core:
+  default_config_hash: 9ebu39G2CYZVmy9G6-lsWWfFvhDzt-YelZrepYjRU40
+id: views_block__news_sidenav_block_1
+theme: ukd8
+region: sidebar
+weight: -6
+provider: null
+plugin: 'views_block:news_sidenav-block_1'
+settings:
+  id: 'views_block:news_sidenav-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: news_node
+    context_mapping: {  }

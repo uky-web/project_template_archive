@@ -1,0 +1,46 @@
+uuid: c72e9c98-0b30-48c6-b14c-77e74f5ae58d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.design_block_reference
+    - eck.eck_type.collection_item.body
+    - eck.eck_type.collection_item.call_to_action
+    - eck.eck_type.collection_item.contact_info
+    - eck.eck_type.collection_item.content_reference
+    - eck.eck_type.collection_item.custom_teaser
+    - eck.eck_type.collection_item.link_collection
+    - eck.eck_type.collection_item.media_figure
+    - eck.eck_type.collection_item.pullquote
+    - eck.eck_type.collection_item.statistic
+    - field.storage.block_content.field_collection_item
+_core:
+  default_config_hash: qev54THxh5GB_Te1BLp-8xTuP4oUlc7Ln1h7MitXe40
+id: block_content.design_block_reference.field_collection_item
+field_name: field_collection_item
+entity_type: block_content
+bundle: design_block_reference
+label: 'Collection Item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      body: body
+      call_to_action: call_to_action
+      contact_info: contact_info
+      content_reference: content_reference
+      custom_teaser: custom_teaser
+      link_collection: link_collection
+      media_figure: media_figure
+      pullquote: pullquote
+      statistic: statistic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: pullquote
+field_type: entity_reference

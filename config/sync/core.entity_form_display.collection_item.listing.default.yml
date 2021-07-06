@@ -1,0 +1,31 @@
+uuid: 337f23d3-accf-4d19-959b-cfd7ac0464ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.listing
+    - field.field.collection_item.listing.field_view
+  module:
+    - viewfield
+_core:
+  default_config_hash: viiIHz40b7pywYuisLnzz-TWJ1bF9BziXryD8G5Q6fM
+id: collection_item.listing.default
+targetEntityType: collection_item
+bundle: listing
+mode: default
+content:
+  field_view:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

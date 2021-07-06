@@ -1,0 +1,22 @@
+uuid: 482b6468-3470-4630-b8d5-fa70fbba9328
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - media
+_core:
+  default_config_hash: klZT8V0oLSwdJ24-tk2XDNZXcxZ1O99UWbglPVGpFY0
+id: collection_item.field_media
+field_name: field_media
+entity_type: collection_item
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

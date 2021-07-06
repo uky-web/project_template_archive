@@ -1,0 +1,11 @@
+uuid: f5feed37-d801-467b-8271-5ea3f53ff4e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.page_header
+_core:
+  default_config_hash: 3Mbxon-flJYpKd8LbxYCw4patK4MO4idyhQRwb-z_3M
+type: full_width
+name: 'Full-width hero'
+description: 'Full-width media with page header below'

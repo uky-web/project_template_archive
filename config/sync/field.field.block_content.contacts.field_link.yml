@@ -1,0 +1,25 @@
+uuid: c877f1bc-e90d-4cfb-8ce5-2603db0cc70d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacts
+    - field.storage.block_content.field_link
+  module:
+    - link
+_core:
+  default_config_hash: _0eWgci3d0MaNa1ytbIy6fyvlEAIkPAuJpPMtZP4C7A
+id: block_content.contacts.field_link
+field_name: field_link
+entity_type: block_content
+bundle: contacts
+label: Link
+description: 'For example, to "Directory"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

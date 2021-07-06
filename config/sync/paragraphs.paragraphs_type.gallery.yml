@@ -1,0 +1,12 @@
+uuid: c54ad48e-8878-4228-89e1-de803cfcf1a6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 2W-QTe_2FmmzLHdHLO6rrNH4qHRVa7_0RLHVrmdxx0k
+id: gallery
+label: Gallery
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,35 @@
+uuid: a6dcba19-8a14-4d19-98ef-31248558c68d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.full_width
+    - core.entity_view_mode.media.half_width
+    - media.type.audio
+    - media.type.hosted_video
+    - media.type.image
+    - media.type.video
+  module:
+    - entity_embed
+    - media
+_core:
+  default_config_hash: '-2YMrFwW45huibyBzzwr-0XFdLuN5jFUfn0xkUkWI6E'
+label: Media
+id: media
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - audio
+    - hosted_video
+    - image
+    - video
+  display_plugins:
+    - 'view_mode:media.full_width'
+    - 'view_mode:media.half_width'
+  preview_display_plugin: 'view_mode:media.preview'
+  entity_browser: media_browser_iframe
+  entity_browser_settings:
+    display_review: false
+icon: {  }
+icon_uuid: null

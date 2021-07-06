@@ -1,0 +1,37 @@
+uuid: a56c9b51-7210-404f-88a8-1a89ac19bece
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_teasers.field_collection_items
+    - field.field.paragraph.custom_teasers.field_headline_group
+    - paragraphs.paragraphs_type.custom_teasers
+  module:
+    - headline_group
+_core:
+  default_config_hash: iodU1O9ObjvJlY_Ch0Onwl-p9QNCaZRlEB9r9XZSaGY
+id: paragraph.custom_teasers.default
+targetEntityType: paragraph
+bundle: custom_teasers
+mode: default
+content:
+  field_collection_items:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: ''
+      headline_group_bem: '1'
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+hidden: {  }

@@ -1,0 +1,30 @@
+uuid: cd167837-352f-4461-b074-2c6d4df4d7b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.media_figure
+    - field.storage.paragraph.field_collection_items
+    - paragraphs.paragraphs_type.gallery
+_core:
+  default_config_hash: KT1NQ1UNu7TQzxq5Y14C4dS1_QMUwxSO9NRq6BD1SW0
+id: paragraph.gallery.field_collection_items
+field_name: field_collection_items
+entity_type: paragraph
+bundle: gallery
+label: 'Gallery Media'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      media_figure: media_figure
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

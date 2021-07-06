@@ -1,0 +1,23 @@
+uuid: 3875f142-29c2-4ada-8a85-685d04bad89e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: LQ9kUoR1iyPDhI7zLTKDWvvejU0WJni8krmv9qoqNdE
+id: collection_item.field_attribution_2
+field_name: field_attribution_2
+entity_type: collection_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

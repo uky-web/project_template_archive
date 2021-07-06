@@ -1,0 +1,30 @@
+uuid: db0b68f4-dbce-4eb1-b5c0-b4a15ba9c494
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.link_collection
+    - field.storage.paragraph.field_collection_items
+    - paragraphs.paragraphs_type.link_lists
+_core:
+  default_config_hash: xlRpy0PB8BppAYI3Buq1ymCassmLUQ7gYloObfcWvcI
+id: paragraph.link_lists.field_collection_items
+field_name: field_collection_items
+entity_type: paragraph
+bundle: link_lists
+label: 'Grid Items'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      link_collection: link_collection
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

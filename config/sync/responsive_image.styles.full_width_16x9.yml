@@ -1,0 +1,25 @@
+uuid: 24133e5d-e909-40c2-bb74-86569fa34982
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.big_16x9
+    - image.style.medium_16x9
+    - image.style.small_16x9
+_core:
+  default_config_hash: FJ7-_VC9uN_C5Vn83qgy39FsYxkoBWbmzvrO1rnvmds
+id: full_width_16x9
+label: 'Full width 16x9'
+image_style_mappings:
+  -
+    breakpoint_id: ukd8.large
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: big_16x9
+  -
+    breakpoint_id: ukd8.medium
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium_16x9
+breakpoint_group: ukd8
+fallback_image_style: small_16x9

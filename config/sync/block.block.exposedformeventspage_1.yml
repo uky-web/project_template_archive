@@ -1,0 +1,32 @@
+uuid: a4298525-5b9c-4337-83d6-4e8bc1016982
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.events_landing
+    - views.view.events
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - ukd8
+_core:
+  default_config_hash: PVKP8kShHOBQDl_hMo2HYwMFWMhwcMpETeXmrUmQ3sQ
+id: exposedformeventspage_1
+theme: ukd8
+region: sidebar
+weight: -9
+provider: null
+plugin: 'views_exposed_filter_block:events-page_1'
+settings:
+  id: 'views_exposed_filter_block:events-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Filter Events'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: events_landing
+    context_mapping: {  }

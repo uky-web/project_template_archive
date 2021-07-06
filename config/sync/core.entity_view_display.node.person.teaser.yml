@@ -1,0 +1,121 @@
+uuid: 234b86d0-4e28-4178-940e-3a8af2dfb29c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_categories
+    - field.field.node.person.field_email
+    - field.field.node.person.field_job_title
+    - field.field.node.person.field_large_image
+    - field.field.node.person.field_location_text
+    - field.field.node.person.field_media
+    - field.field.node.person.field_name
+    - field.field.node.person.field_paragraphs
+    - field.field.node.person.field_phone
+    - field.field.node.person.field_preferred_name
+    - node.type.person
+  module:
+    - entity_reference_widget_helpers
+    - name
+    - telephone
+    - text
+    - user
+_core:
+  default_config_hash: rJ8owBV8yp8JACAb39ums_r4Yq7sKlnQu0_so7ai9QE
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 6
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_categories:
+    type: entity_reference_label
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      entity_reference_widget_helpers:
+        custom_label_link: ''
+  field_email:
+    type: email_mailto
+    weight: 7
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_job_title:
+    type: string
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_location_text:
+    type: string
+    weight: 9
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_media:
+    type: entity_reference_entity_view
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      view_mode: half_width
+      link: false
+    third_party_settings: {  }
+  field_name:
+    type: name_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      format: short_full
+      output: default
+      multiple: default
+      multiple_delimiter: ', '
+      multiple_and: text
+      multiple_delimiter_precedes_last: never
+      multiple_el_al_min: '3'
+      multiple_el_al_first: '1'
+      markup: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_link
+    weight: 8
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+  field_preferred_name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_large_image: true
+  field_paragraphs: true

@@ -1,0 +1,21 @@
+uuid: 7ec263ff-f775-424e-9356-66ffaf77e960
+langcode: en
+status: true
+dependencies:
+  module:
+    - described_link
+    - eck
+_core:
+  default_config_hash: 8JUOkRcA0ewqtqxWSBLTJ3NT3UU1WzaXaO2WgMzyPJU
+id: collection_item.field_described_links
+field_name: field_described_links
+entity_type: collection_item
+type: described_link
+settings: {  }
+module: described_link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

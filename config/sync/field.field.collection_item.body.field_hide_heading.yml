@@ -1,0 +1,25 @@
+uuid: ffd80515-fe36-4204-a56a-5d332feab069
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.body
+    - field.storage.collection_item.field_hide_heading
+_core:
+  default_config_hash: gsBY09xzeX-hH8WSlVIRI8wUfyj3xEQpn-Xl3tWldt8
+id: collection_item.body.field_hide_heading
+field_name: field_hide_heading
+entity_type: collection_item
+bundle: body
+label: 'Hide heading'
+description: 'Suppress the title on the front end'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

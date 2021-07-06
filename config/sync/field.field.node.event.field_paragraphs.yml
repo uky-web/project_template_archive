@@ -1,0 +1,67 @@
+uuid: c776da60-b0cf-4064-928f-1219525665ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.event
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: x_iCsC9Zj_j5JSCVOWsP5NdCHSt1qP9_klK31CKlAeU
+id: node.event.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: event
+label: Paragraphs
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop:
+      body:
+        weight: -27
+        enabled: false
+      calls_to_action:
+        weight: -26
+        enabled: false
+      carousel:
+        weight: -25
+        enabled: false
+      custom_teasers:
+        weight: -24
+        enabled: false
+      feed:
+        weight: -23
+        enabled: false
+      gallery:
+        weight: -22
+        enabled: false
+      link_lists:
+        weight: -21
+        enabled: false
+      media:
+        weight: -20
+        enabled: false
+      statistics:
+        weight: -19
+        enabled: false
+      zipper:
+        weight: -18
+        enabled: false
+      editorial_aside:
+        weight: -17
+        enabled: false
+      2_1_slab:
+        weight: -16
+        enabled: false
+      flex_grid:
+        weight: -15
+        enabled: false
+field_type: entity_reference_revisions

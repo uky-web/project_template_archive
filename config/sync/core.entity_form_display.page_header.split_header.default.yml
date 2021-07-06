@@ -1,0 +1,85 @@
+uuid: 205d3aaa-b23e-471e-b511-e5176386a8db
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.split_header
+    - entity_browser.browser.media_browser_modal
+    - field.field.page_header.split_header.field_cta_link
+    - field.field.page_header.split_header.field_headline_group
+    - field.field.page_header.split_header.field_media
+    - field.field.page_header.split_header.field_secondary_link
+    - field.field.page_header.split_header.field_theme_color_scheme
+  module:
+    - entity_browser
+    - entity_reference_widget_helpers
+    - field_group
+    - headline_group
+    - link
+third_party_settings:
+  field_group:
+    group_settings:
+      children:
+        - field_theme_color_scheme
+      parent_name: ''
+      weight: 0
+      format_type: settings
+      format_settings:
+        id: ''
+        classes: ''
+      label: Settings
+_core:
+  default_config_hash: 2mhDHW3ITz-hVa9nkG-68evpzVQgVf4WaRh2dc4mWj0
+id: page_header.split_header.default
+targetEntityType: page_header
+bundle: split_header
+mode: default
+content:
+  field_cta_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_headline_group:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_media:
+    weight: 4
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: half_width
+    third_party_settings:
+      entity_reference_widget_helpers:
+        collection_link: 0
+    type: entity_browser_entity_reference
+    region: content
+  field_secondary_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_theme_color_scheme:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  title: true

@@ -1,0 +1,45 @@
+uuid: 5b2e3a17-ffdc-4764-aa89-4ae6f39faed9
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.statistic
+    - field.field.collection_item.statistic.field_description
+    - field.field.collection_item.statistic.field_headline_group
+  module:
+    - entity_reference_widget_helpers
+    - headline_group
+    - text
+_core:
+  default_config_hash: vJHVIaSHgQNFaPjWePWyYOrdBI7SgEgJ6-CeyKvp9lc
+id: collection_item.statistic.default
+targetEntityType: collection_item
+bundle: statistic
+mode: default
+content:
+  field_description:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_headline_group:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 12
+      placeholder: ''
+    third_party_settings:
+      entity_reference_widget_helpers:
+        eck_title_label_override: Statistic
+        eck_title_description_override: 'Number-like phrase, 12 characters max'
+hidden: {  }

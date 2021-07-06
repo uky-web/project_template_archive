@@ -1,0 +1,25 @@
+uuid: 8a73b132-f0f1-4d73-be88-4738e0a15bcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_flip
+    - paragraphs.paragraphs_type.2_1_slab
+_core:
+  default_config_hash: dJjWnJrLcYGx-7FDvogCte_tBTLPHGMY4vbki4EHlDE
+id: paragraph.2_1_slab.field_flip
+field_name: field_flip
+entity_type: paragraph
+bundle: 2_1_slab
+label: Flip
+description: 'Show the aside first'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

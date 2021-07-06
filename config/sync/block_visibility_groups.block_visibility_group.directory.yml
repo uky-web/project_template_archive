@@ -1,0 +1,19 @@
+uuid: a6875337-d5a7-4194-9794-79c715e9c8eb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: eQZg_RpGveaSOkRM_Ge6LpYflRhDWcil7kHLDTiPqs4
+id: directory
+label: Directory
+logic: and
+conditions:
+  8b4001fd-c4d5-43de-92de-c72fde256ba0:
+    id: request_path
+    pages: /people
+    negate: false
+    context_mapping: {  }
+    uuid: 8b4001fd-c4d5-43de-92de-c72fde256ba0
+allow_other_conditions: false

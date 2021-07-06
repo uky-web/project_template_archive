@@ -1,0 +1,23 @@
+uuid: 7baeea7a-a3df-472d-bff1-59e2eadf0181
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: wtbGZT3-28Ox2IUsBtYFTlx0VGe-jcv7w_v3DOJv3rs
+id: collection_item.field_attribution_1
+field_name: field_attribution_1
+entity_type: collection_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

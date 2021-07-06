@@ -1,0 +1,11 @@
+uuid: 9b1524ae-23ae-4831-8c87-913e210f5fb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: I9fgX6sd2GCXqsyJ05uoM-8QzxdnpJbIuJht-xbL0wM
+type: custom_teaser
+name: 'Custom Teaser'
+description: 'Similar to a content reference, but a DIY teaser'

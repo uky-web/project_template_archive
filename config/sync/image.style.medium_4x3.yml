@@ -1,0 +1,19 @@
+uuid: 46de5308-632d-49a7-98d3-cd291827a269
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: PWfLAJHnUDckMsRPbHjLv0Fko0Y3YguyNw5OBi7txx0
+name: medium_4x3
+label: 'Medium 4x3'
+effects:
+  0cccdb9e-7574-4a03-b1a4-8a16fe91047e:
+    uuid: 0cccdb9e-7574-4a03-b1a4-8a16fe91047e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 850
+      height: 638
+      crop_type: focal_point

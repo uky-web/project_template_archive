@@ -1,0 +1,25 @@
+uuid: adc59617-04be-4187-9051-bb07873fde95
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.link_collection
+    - field.storage.collection_item.field_described_links
+  module:
+    - described_link
+_core:
+  default_config_hash: skfLxrHPeuYRf4s4TcYD2_Ff8ODAS-UYMHbUMWgTshY
+id: collection_item.link_collection.field_described_links
+field_name: field_described_links
+entity_type: collection_item
+bundle: link_collection
+label: 'Described links'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: '17'
+  title: '1'
+field_type: described_link

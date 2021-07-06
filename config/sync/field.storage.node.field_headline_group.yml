@@ -1,0 +1,21 @@
+uuid: 0b60af39-fa8d-4f32-ae81-f818057d99d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - headline_group
+    - node
+_core:
+  default_config_hash: J0cV0GFGw3eUzSMzf57QXr-suFuihAZ8B1CcCRT_pdg
+id: node.field_headline_group
+field_name: field_headline_group
+entity_type: node
+type: headline_group
+settings: {  }
+module: headline_group
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

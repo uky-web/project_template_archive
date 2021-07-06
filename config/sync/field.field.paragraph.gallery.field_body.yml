@@ -1,0 +1,43 @@
+uuid: a38c53b1-93ab-4d2d-be3b-6627fcdb3e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 1
+    allowed_formats:
+      basic_html: basic_html
+      inline_html: 0
+      restricted_html: 0
+      full_html: 0
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        inline_html:
+          weight: '-10'
+        basic_html:
+          weight: '-9'
+        restricted_html:
+          weight: '-8'
+        full_html:
+          weight: '-7'
+_core:
+  default_config_hash: A6kjXOitfoP3_aFACFKNx8sY1ippQx0lWkWtdNWQSkk
+id: paragraph.gallery.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: gallery
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

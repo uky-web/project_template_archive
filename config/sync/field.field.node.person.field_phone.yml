@@ -1,0 +1,23 @@
+uuid: cfc30693-607d-4295-b579-dac27af901e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone
+    - node.type.person
+  module:
+    - telephone
+_core:
+  default_config_hash: cLGuoQ3iCpwbqqfPJKHoijxtNxPG1yJblG37DYg9LCc
+id: node.person.field_phone
+field_name: field_phone
+entity_type: node
+bundle: person
+label: Phone
+description: "Always use a full 10-digit number, including area code, separated with hyphens. Do not use parentheses. Toll-free numbers that always require a “1-” prefix should include it. Precede extensions with ext.<br>\r\nExamples: <br>\r\n• 859-257-1754, ext. 235 <br>\r\n• 1-800-555-2222<br>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

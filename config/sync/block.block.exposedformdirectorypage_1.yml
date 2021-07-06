@@ -1,0 +1,32 @@
+uuid: 2c5d6460-fa6b-4db6-897a-8c10f66ad01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_visibility_groups.block_visibility_group.directory
+    - views.view.directory
+  module:
+    - block_visibility_groups
+    - views
+  theme:
+    - ukd8
+_core:
+  default_config_hash: o23uHryq4IIUMW_wsOoWPySzA1XXNNfH3UDcGHpu9k4
+id: exposedformdirectorypage_1
+theme: ukd8
+region: sidebar
+weight: -10
+provider: null
+plugin: 'views_exposed_filter_block:directory-page_1'
+settings:
+  id: 'views_exposed_filter_block:directory-page_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: 'Filter Directory'
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    block_visibility_group: directory
+    context_mapping: {  }

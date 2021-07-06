@@ -1,0 +1,12 @@
+uuid: 3f67efbe-d0bf-471e-8c9a-788a2c5c175d
+langcode: en
+status: true
+dependencies:
+  module:
+    - embederator
+_core:
+  default_config_hash: AuNzYAfs6c0Sm0en-NKBwI2rgXDIIEx9psVa0Rw71u0
+id: embederator.token
+label: Token
+targetEntityType: embederator
+cache: true

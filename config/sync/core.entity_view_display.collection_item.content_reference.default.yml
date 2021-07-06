@@ -1,0 +1,25 @@
+uuid: b3422c1f-c340-45c9-8314-5d72d3d75a58
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.content_reference
+    - field.field.collection_item.content_reference.field_content
+_core:
+  default_config_hash: Ccxrcgsdfn4ie6F_qZU3_TxnTeBcj9hwejIp4ZpJFgQ
+id: collection_item.content_reference.default
+targetEntityType: collection_item
+bundle: content_reference
+mode: default
+content:
+  field_content:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  title: true

@@ -1,0 +1,30 @@
+uuid: fc8eac49-6e1c-4ca1-91c9-bef0bcbfb93e
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.media_figure
+    - field.storage.paragraph.field_collection_items
+    - paragraphs.paragraphs_type.carousel
+_core:
+  default_config_hash: Mj94UCS606ECou5nTYmfH9TDmhBCXy7Tyio61DJGZuc
+id: paragraph.carousel.field_collection_items
+field_name: field_collection_items
+entity_type: paragraph
+bundle: carousel
+label: Slides
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      media_figure: media_figure
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

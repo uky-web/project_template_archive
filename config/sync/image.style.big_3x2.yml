@@ -1,0 +1,19 @@
+uuid: 8cded0fb-4648-49dd-ae5e-8e958f259ca6
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: LKbjNkQz7PG31pbty7qhM438ScDu4YPcpN4R1_kN8aM
+name: big_3x2
+label: 'Big 3x2'
+effects:
+  18fd500c-2594-4b01-8a7e-2b2cb1b1974f:
+    uuid: 18fd500c-2594-4b01-8a7e-2b2cb1b1974f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 400
+      crop_type: focal_point

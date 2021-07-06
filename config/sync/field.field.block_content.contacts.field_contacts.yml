@@ -1,0 +1,30 @@
+uuid: 7e890f30-aaa8-402e-bed6-33d219a769e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacts
+    - eck.eck_type.collection_item.contact_info
+    - field.storage.block_content.field_contacts
+_core:
+  default_config_hash: 0mxO2l36Uw5_RPKZ5eMBg2w_MXQT3BYYazEsmy37Uys
+id: block_content.contacts.field_contacts
+field_name: field_contacts
+entity_type: block_content
+bundle: contacts
+label: Contacts
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      contact_info: contact_info
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

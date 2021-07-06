@@ -1,0 +1,11 @@
+uuid: c699c84a-539c-47df-abdd-63f599d3fcb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: '-5ckX8ccM5_Yi3i9vOgd5WQ2buwL7dbkh2LpkJ5Z4nI'
+type: link_collection
+name: 'Link List'
+description: 'A collection of described links'

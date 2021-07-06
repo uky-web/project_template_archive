@@ -1,0 +1,30 @@
+uuid: c5a6390c-c9d5-4146-98a9-e956c6ac3a7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_group
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - headline_group
+_core:
+  default_config_hash: _Oe8PvefCZbRaMmdZtYFk7d8sTVgbbmZKaoM1i3Gy3c
+id: paragraph.gallery.field_headline_group
+field_name: field_headline_group
+entity_type: paragraph
+bundle: gallery
+label: 'Headline group'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    superhead: ''
+    headline: ''
+    subhead: ''
+default_value_callback: ''
+settings:
+  include_superhead: include_superhead
+  title_behavior: headline_is_blank
+  include_subhead: include_subhead
+field_type: headline_group

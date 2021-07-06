@@ -1,0 +1,11 @@
+uuid: bd092ec0-34db-41da-a623-e01b3fc605de
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: '-RyjZ4Y9m13Qnf2VGpv5XduN7bRhCaFbV_0Sk5ZY4b4'
+type: call_to_action
+name: 'Call to Action'
+description: 'A titled callout with a single button link out'

@@ -1,0 +1,25 @@
+uuid: 11a5377b-a7e9-4291-a09e-35c6290aeb7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_style
+    - node.type.event
+_core:
+  default_config_hash: dvWDCt9q_qVbA8hYzg7Dpv2tZVLpSqC1mHO59nLw5ZY
+id: node.event.field_header_style
+field_name: field_header_style
+entity_type: node
+bundle: event
+label: 'Header Style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:page_header_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

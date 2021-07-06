@@ -1,0 +1,21 @@
+uuid: 59e1946a-74ee-4450-ab21-3800b5bdad73
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+_core:
+  default_config_hash: TqDpCbGj_mwJdEG2RJ5knkPRYGC1ajt3YOYqe9trZ1c
+id: event_node
+label: 'Event Node'
+logic: and
+conditions:
+  b07897b6-48b0-4952-b982-af51e10a64db:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    uuid: b07897b6-48b0-4952-b982-af51e10a64db
+allow_other_conditions: false

@@ -1,0 +1,61 @@
+uuid: 76f187c5-a479-4abf-8d60-7bad6167020c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.listing
+    - field.storage.collection_item.field_view
+  module:
+    - viewfield
+_core:
+  default_config_hash: 1ejar9sHP_u0utnQ_n0fqP7i07GcD1oVjBA0aLXVLM0
+id: collection_item.listing.field_view
+field_name: field_view
+entity_type: collection_item
+bundle: listing
+label: View
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    token_help: ''
+    display_id: block_2
+    arguments: ''
+    target_uuid: 28083d31-e2fc-42a0-a98e-8fd927c068df
+    items_to_display: ''
+default_value_callback: ''
+settings:
+  force_default: false
+  allowed_views:
+    content_teaser_grids: content_teaser_grids
+    collection_item_usage: '0'
+    content: '0'
+    block_content: '0'
+    directory: '0'
+    events: '0'
+    events_sidenav: '0'
+    file_entity_browser: '0'
+    files: '0'
+    frontpage: '0'
+    media: '0'
+    media_browser: '0'
+    news: '0'
+    news_sidenav: '0'
+    paragraph_usage: '0'
+    user_admin_people: '0'
+    content_recent: '0'
+    redirect: '0'
+    taxonomy_term: '0'
+    watchdog: '0'
+    who_s_new: '0'
+    who_s_online: '0'
+  allowed_display_types:
+    block: block
+    entity_browser: '0'
+    feed: '0'
+    default: '0'
+    page: '0'
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

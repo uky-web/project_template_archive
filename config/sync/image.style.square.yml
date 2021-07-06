@@ -1,0 +1,19 @@
+uuid: 8654129d-8fd7-4084-815a-65699269f87f
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: rlTDh19QYGXiHN_0C0J0BJGVTb2zoUCt4BBGEQkNjog
+name: square
+label: 'Square (355)'
+effects:
+  494ff38d-f6e7-43d2-80ae-4f7a67e12dd9:
+    uuid: 494ff38d-f6e7-43d2-80ae-4f7a67e12dd9
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 355
+      height: 355
+      crop_type: focal_point

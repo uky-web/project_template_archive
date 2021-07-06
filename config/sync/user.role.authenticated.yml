@@ -1,0 +1,36 @@
+uuid: 4eee1de2-9d75-4e1b-b130-2333d54da00b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: k3NOsKbBds3Y81yaQ0PpCVLW55YILfmTH2esGfY_hkk
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'dropzone upload files'
+  - 'never autoplay videos'
+  - 'search content'
+  - 'view any collection_item entities'
+  - 'view any location entities'
+  - 'view any page_header entities'
+  - 'view embederator entity'
+  - 'view media'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view paragraph content 2_1_slab'
+  - 'view paragraph content body'
+  - 'view paragraph content calls_to_action'
+  - 'view paragraph content carousel'
+  - 'view paragraph content custom_teasers'
+  - 'view paragraph content editorial_aside'
+  - 'view paragraph content feed'
+  - 'view paragraph content flex_grid'
+  - 'view paragraph content gallery'
+  - 'view paragraph content link_lists'
+  - 'view paragraph content media'
+  - 'view paragraph content statistics'
+  - 'view paragraph content zipper'

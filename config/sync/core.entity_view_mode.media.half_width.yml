@@ -1,0 +1,12 @@
+uuid: b6150b24-ab21-49bb-9c43-48948fa92ac3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: zV_YXL84sBqf60Db2uQd6QIZVP-owqtFYo2404cxFuQ
+id: media.half_width
+label: 'Partial width'
+targetEntityType: media
+cache: true

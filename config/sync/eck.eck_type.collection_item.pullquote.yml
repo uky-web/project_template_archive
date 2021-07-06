@@ -1,0 +1,11 @@
+uuid: fdb78ee0-517a-4376-bfd8-2f7956b7aa70
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: Vx_77zW1i-ZoJarQUvNe7XZ3anPJ8BBtLlQ_y8E-7ZM
+type: pullquote
+name: Pullquote
+description: 'A quotation with attribution'

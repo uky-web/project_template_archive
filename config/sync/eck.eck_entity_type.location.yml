@@ -1,0 +1,12 @@
+uuid: 49f3ed95-ac85-47a6-9e4a-765e7eccc4d8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: HSKLPK-7XgxL9QUdSAoTIQluHt96IO_j8aMCrBdQPBI
+id: location
+label: Location
+created: false
+changed: false
+uid: false
+title: true

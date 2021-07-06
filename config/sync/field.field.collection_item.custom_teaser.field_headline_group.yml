@@ -1,0 +1,30 @@
+uuid: 65f944e7-8763-4cee-a513-8cc06e7d7171
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.custom_teaser
+    - field.storage.collection_item.field_headline_group
+  module:
+    - headline_group
+_core:
+  default_config_hash: qwye1TT9bCs5_VKoVRwlr_M9V7K0kaYcdmCd1cD125Q
+id: collection_item.custom_teaser.field_headline_group
+field_name: field_headline_group
+entity_type: collection_item
+bundle: custom_teaser
+label: 'Headline group'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    superhead: ''
+    headline: ''
+    subhead: ''
+default_value_callback: ''
+settings:
+  include_superhead: include_superhead
+  title_behavior: headline_is_title
+  include_subhead: include_subhead
+field_type: headline_group

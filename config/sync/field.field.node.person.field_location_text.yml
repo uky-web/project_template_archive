@@ -1,0 +1,21 @@
+uuid: 0a475672-8843-4e66-be35-78931a6cf92b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_text
+    - node.type.person
+_core:
+  default_config_hash: P_1BTMb291Ijl9UiJBmX26PulObklsaZAqqEWJOAlX8
+id: node.person.field_location_text
+field_name: field_location_text
+entity_type: node
+bundle: person
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

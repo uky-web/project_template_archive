@@ -1,0 +1,37 @@
+uuid: 3e077dc1-f82a-495d-a88b-546b221738b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.calls_to_action.field_collection_items
+    - field.field.paragraph.calls_to_action.field_headline_group
+    - paragraphs.paragraphs_type.calls_to_action
+  module:
+    - headline_group
+_core:
+  default_config_hash: 3pI_wAtxsw3xNWG5jE1I9NGCg2_IZkd-LpMxnmnx1xI
+id: paragraph.calls_to_action.default
+targetEntityType: paragraph
+bundle: calls_to_action
+mode: default
+content:
+  field_collection_items:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: ''
+      headline_group_bem: '1'
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+hidden: {  }

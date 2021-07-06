@@ -1,0 +1,12 @@
+uuid: 2f273d9b-488f-4dbe-b9e2-64df573dec38
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: H8W-h45gBiwp__6PMCGlPC3oh_DRsXRqrg_z_5ebktA
+id: media
+label: 'Media (full-width)'
+icon_uuid: null
+icon_default: null
+description: 'Full-width captioned media'
+behavior_plugins: {  }

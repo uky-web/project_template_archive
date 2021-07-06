@@ -1,0 +1,43 @@
+uuid: a918586b-7dd7-4cf0-80af-9a6f581b335d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - field.storage.collection_item.field_description
+  module:
+    - better_formats
+    - text
+third_party_settings:
+  better_formats:
+    allowed_formats_toggle: 1
+    allowed_formats:
+      basic_html: basic_html
+      inline_html: 0
+      restricted_html: 0
+      full_html: 0
+    default_order_toggle: 0
+    default_order_wrapper:
+      formats:
+        inline_html:
+          weight: '-10'
+        basic_html:
+          weight: '-9'
+        restricted_html:
+          weight: '-8'
+        full_html:
+          weight: '-7'
+_core:
+  default_config_hash: jrdMYnfHqX0m4XPiFykaZT7Eg9VMQU_2lybBGLXrEVE
+id: collection_item.call_to_action.field_description
+field_name: field_description
+entity_type: collection_item
+bundle: call_to_action
+label: Description
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

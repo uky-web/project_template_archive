@@ -1,0 +1,45 @@
+uuid: 67ae7178-b1e9-4f54-802d-b3789cc5498b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.collection_item.full_width
+    - eck.eck_type.collection_item.media_figure
+    - field.field.collection_item.media_figure.field_description
+    - field.field.collection_item.media_figure.field_hide_heading
+    - field.field.collection_item.media_figure.field_media
+  module:
+    - text
+_core:
+  default_config_hash: jYKUIQ9PRY9eeoT2wHl7XEDuAlQifW5vazqovCNIKt8
+id: collection_item.media_figure.full_width
+targetEntityType: collection_item
+bundle: media_figure
+mode: full_width
+content:
+  field_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: full
+      link: false
+    third_party_settings: {  }
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 1
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_hide_heading: true

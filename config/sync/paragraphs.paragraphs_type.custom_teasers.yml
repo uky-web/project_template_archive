@@ -1,0 +1,12 @@
+uuid: b5fff95c-e3fe-456f-9c6d-37ea00d54e02
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sNDjfUexFQzHx0ijys0XaL9NxeQ14zC-ACISFYgXnLI
+id: custom_teasers
+label: 'Custom Teasers'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

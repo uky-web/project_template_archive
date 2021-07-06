@@ -1,0 +1,22 @@
+uuid: 02ae34c0-9293-43bd-910e-41cac5f638a5
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - ukd8
+_core:
+  default_config_hash: OKRzQJPUiG0d3Uj3HuxyPdXnwee7rQ0NY3egIZD2vZM
+id: uky_messages
+theme: ukd8
+region: content_prefix
+weight: -10
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

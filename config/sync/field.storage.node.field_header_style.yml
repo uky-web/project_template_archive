@@ -1,0 +1,22 @@
+uuid: 91ff8de3-99bb-48ce-8305-a48ccabfc87e
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - node
+_core:
+  default_config_hash: Y5mVY-KFkR6F7J-lkbpongFquqEW8HGTZ7GWO1JObhI
+id: node.field_header_style
+field_name: field_header_style
+entity_type: node
+type: entity_reference
+settings:
+  target_type: page_header_type
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

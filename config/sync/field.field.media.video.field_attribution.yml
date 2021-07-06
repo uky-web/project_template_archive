@@ -1,0 +1,21 @@
+uuid: 5e457525-3e85-4a7d-8e3c-d28c4185e1eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_attribution
+    - media.type.video
+_core:
+  default_config_hash: oMFyVo5LQNj39ldIm8_WqAV3krJau06zNVA8J6BgCn8
+id: media.video.field_attribution
+field_name: field_attribution
+entity_type: media
+bundle: video
+label: Attribution
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

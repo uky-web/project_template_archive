@@ -1,0 +1,21 @@
+uuid: 382c8f0e-9cba-42ee-ad50-84173aa7d8dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_theme_color_scheme
+    - paragraphs.paragraphs_type.carousel
+_core:
+  default_config_hash: I6gWj7DTkYc_MVN1EOJ0sIFxM01pNTuSo8xDb5rfOdY
+id: paragraph.carousel.field_theme_color_scheme
+field_name: field_theme_color_scheme
+entity_type: paragraph
+bundle: carousel
+label: 'Color theme'
+description: 'Theme setttings have no effect if used in an editorial (partial-width) column.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+uuid: 0c604372-8589-48d0-af3d-6055ae839deb
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: vzmbjxlDhwyoDi7atmaTQbuqHrFGmSA-GyC9pV-2jD0
+type: listing
+name: Feed
+description: 'A viewfield reference'

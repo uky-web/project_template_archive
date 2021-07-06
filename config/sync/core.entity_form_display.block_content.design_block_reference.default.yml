@@ -1,0 +1,49 @@
+uuid: e9340975-6be4-4ac7-9bb2-682120793308
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.design_block_reference
+    - field.field.block_content.design_block_reference.field_collection_item
+  module:
+    - entity_browser_entity_form
+    - entity_reference_widget_helpers
+    - inline_entity_form
+_core:
+  default_config_hash: tngMGK4Ap066ScuvbesxwppRwHu8Vo4qMhDofcTk5KA
+id: block_content.design_block_reference.default
+targetEntityType: block_content
+bundle: design_block_reference
+mode: default
+content:
+  field_collection_item:
+    weight: 26
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Block
+      label_plural: blocks
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+      entity_reference_widget_helpers:
+        use_dropdown: '1'
+        dropdown_if_less: '50'
+        collection_link: 0
+    type: inline_entity_form_complex
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

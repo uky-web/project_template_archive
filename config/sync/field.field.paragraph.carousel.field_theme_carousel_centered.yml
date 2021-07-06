@@ -1,0 +1,23 @@
+uuid: 77806a5d-1d22-4615-9623-30fe6a875281
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_theme_carousel_centered
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - options
+_core:
+  default_config_hash: JX51_yk3wOpv09vbcAuc-s489EX_AKx6098kw8IjZQ4
+id: paragraph.carousel.field_theme_carousel_centered
+field_name: field_theme_carousel_centered
+entity_type: paragraph
+bundle: carousel
+label: Centered
+description: 'Use centered carousel style'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

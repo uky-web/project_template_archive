@@ -1,0 +1,49 @@
+uuid: 1f3aa8cd-71ef-4a4d-9be2-14884d1dfc39
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.2_1_slab.field_aside
+    - field.field.paragraph.2_1_slab.field_flip
+    - field.field.paragraph.2_1_slab.field_headline_group
+    - field.field.paragraph.2_1_slab.field_main
+    - paragraphs.paragraphs_type.2_1_slab
+  module:
+    - headline_group
+_core:
+  default_config_hash: m5QzCYa-LUj54fR8J6oZxBC7knhA_hIYkfVFIgFoqrY
+id: paragraph.2_1_slab.default
+targetEntityType: paragraph
+bundle: 2_1_slab
+mode: default
+content:
+  field_aside:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: ''
+      headline_group_bem: '1'
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+  field_main:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_flip: true

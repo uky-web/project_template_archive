@@ -1,0 +1,24 @@
+uuid: 61d8e519-9908-4f5b-83d2-8339cbe4fad8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.table
+    - field.field.block_content.table.field_info
+_core:
+  default_config_hash: Se1Vpn-Cl5nf75tf4YbjXhV1JcS_8Nd9-arb8IumYvI
+id: block_content.table.default
+targetEntityType: block_content
+bundle: table
+mode: default
+content:
+  field_info:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

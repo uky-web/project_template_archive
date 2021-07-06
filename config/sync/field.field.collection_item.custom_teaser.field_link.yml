@@ -1,0 +1,25 @@
+uuid: 1edce5d2-5aff-4aad-a96c-3c0c33b9421c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.custom_teaser
+    - field.storage.collection_item.field_link
+  module:
+    - link
+_core:
+  default_config_hash: WXDFdGLHaNz30oTjG4OiDYJTtwLSu3tFGtlxhCoSq4I
+id: collection_item.custom_teaser.field_link
+field_name: field_link
+entity_type: collection_item
+bundle: custom_teaser
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

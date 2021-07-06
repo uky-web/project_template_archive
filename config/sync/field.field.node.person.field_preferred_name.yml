@@ -1,0 +1,21 @@
+uuid: 4cabc0e4-dac0-474f-b87a-a6974b3691d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preferred_name
+    - node.type.person
+_core:
+  default_config_hash: LSG0nyzPffd-nOsHeewJ4AurcDoqxNiYnWrpUXwH6Ws
+id: node.person.field_preferred_name
+field_name: field_preferred_name
+entity_type: node
+bundle: person
+label: 'Preferred name'
+description: 'Optional; overrides all name fields. Type exactly as you would like it to appear, e.g. Mr. John Doe.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
