@@ -17,7 +17,15 @@ if [ -f "reference/sanitized.sql" ]
 fi
 
 cd web
-lando drush cim -y
+
+#FIXME: .htaccess breaks this check
+	if [ "$(ls -A ../config/sync)" ]; then
+     lando drush cim -y
+	else
+    echo "config/sync is empty; not running import"
+	fi
+
+
 lando drush cr
 
 lando drush user:password admin "admin"

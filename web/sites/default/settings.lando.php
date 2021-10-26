@@ -11,12 +11,12 @@ $settings['extension_discovery_scan_tests'] = FALSE;
 $settings['hash_salt'] = '1234';
 
 $databases['default']['default'] = [
-    'database' => 'drupal',
+    'database' => 'drupal8',
     'driver' => 'mysql',
-    'host' => 'mysql',
+    'host' => 'database',
     'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-    'password' =>  'drupal',
+    'password' =>  'drupal8',
     'port' => '3306',
     'prefix' => '',
-    'username' => 'drupal'
+    'username' => 'drupal8'
 ];
