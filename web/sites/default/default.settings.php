@@ -787,6 +787,10 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
     include $app_root . '/' . $site_path . '/settings.local.php';
 }
 
+ /* Including the settings.ddev.php if available...  */
+ if (file_exists(__DIR__ . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
+  include __DIR__ . '/settings.ddev.php';
+}
 
 
 
