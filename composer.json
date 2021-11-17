@@ -3,23 +3,26 @@
     "description": "Project template for UK Drupal 8 projects with composer",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "authors":[
-    
-      ],
-    "repositories": [
-    {
-        "type": "composer",
-        "url": "https://satis.uky.dev"
-    },
-    {
-        "type": "composer",
-        "url": "https://packages.drupal.org/8"
-    },
+    "authors": [
         {
-        "type": "composer",
-        "url": "https://asset-packagist.org"
-    }
+            "name": "University of Kentucky Webcom",
+            "email": "universitywebservices@l.uky.edu"
+        }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.uky.dev"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+            {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],    
     "require": {
         "php": ">=7.0.8",
         "composer/installers": "^1.2",
@@ -32,7 +35,8 @@
         "uky-web/uky_base": "^1.1.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
-        "zaporylie/composer-drupal-optimizations": "^1.0"
+        "zaporylie/composer-drupal-optimizations": "^1.0",
+        "uky-web/uky_platform_dev_tools": "dev-master"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -43,15 +47,17 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "optimize-autoloader": true,
-        "gitlab-token":{
-          "gitlab.com":"Zhqzs6MLWDrAyyR9fif4"
+        "gitlab-token": {
+            "gitlab.com": "Zhqzs6MLWDrAyyR9fif4"
         }
-      },
+    },
     "autoload": {
         "classmap": [
             "scripts/composer/ScriptHandler.php"
         ],
-        "files": ["load.environment.php"]
+        "files": [
+            "load.environment.php"
+        ]
     },
     "scripts": {
         "pre-install-cmd": [
@@ -74,33 +80,52 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-        "drupal-scaffold": {
+    	"drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             },
+            "allowed-packages": [
+                "uky-web/uky_platform_dev_tools"
+            ] 
+	    },
             "gitignore": true,
             "file-mapping": {
                 "[web-root]/sites/default/default.settings.php": false,
                 "[web-root]/sites/development.services.yml": false,
                 "[web-root]/.env-example": false
-            }
-        },
+            },
         "installer-types": [
             "npm-asset",
             "bower-asset",
             "drupal-custom-profile",
             "drupal-custom-module",
             "drupal-custom-theme"
-        ],
+	],
         "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/profiles/custom/{$name}": ["type:drupal-custom-profile"],
-            "web/themes/custom/{$name}": ["type:drupal-custom-theme"],
+            "web/core": [
+                "type:drupal-core"
+            ],
+            "web/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "web/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "web/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/Commands/contrib/{$name}": [
+                "type:drupal-drush"
+            ],
+            "web/modules/custom/{$name}": [
+                "type:drupal-custom-module"
+            ],
+            "web/profiles/custom/{$name}": [
+                "type:drupal-custom-profile"
+            ],
+            "web/themes/custom/{$name}": [
+                "type:drupal-custom-theme"
+            ],
             "web/libraries/{$name}": [
                 "type:drupal-library",
                 "type:npm-asset",
