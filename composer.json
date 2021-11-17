@@ -134,8 +134,5 @@
                 "type:bower-asset"
             ]
         }
-    },
-    "require-dev": {
-        "drupal/devel": "^4.1"
     }
 }
