@@ -28,13 +28,7 @@
 /.editorconfig
 /.gitattributes
 
-# Ignore all platform dev tools
-/.ddev/
-/.gitpod.Dockerfile
-/.gitpod.yml
+# Ignore lando platform dev tools
 /.lando/
 /.lando.yml
-/.theia/
-/.vscode/
-web/sites/*/settings.ddev.php
 web/sites/*/settings.lando.php
