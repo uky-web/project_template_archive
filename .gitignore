@@ -28,7 +28,4 @@
 /.editorconfig
 /.gitattributes
 
-# Ignore lando platform dev tools
-/.lando/
-/.lando.yml
-web/sites/*/settings.lando.php
+
