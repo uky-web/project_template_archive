@@ -90,7 +90,6 @@
                 "uky-web/uky_platform_dev_tools"
             ] 
 	    },
-            "gitignore": true,
             "file-mapping": {
                 "[web-root]/sites/default/default.settings.php": false,
                 "[web-root]/sites/development.services.yml": false,
