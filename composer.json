@@ -24,7 +24,7 @@
         }
     ],    
     "require-dev": {
-	"uky-web/uky_platform_dev_tools": "^1.0.0"
+	"uky-web/uky_platform_dev_tools": "dev-master"
     },
     "require": {
         "php": ">=7.0.8",
