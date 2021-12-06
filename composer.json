@@ -24,7 +24,7 @@
         }
     ],    
     "require-dev": {
-	"uky-web/uky_platform_dev_tools": "dev-master"
+	    "uky-web/uky_platform_dev_tools": "v1.0.0"
     },
     "require": {
         "php": ">=7.0.8",
@@ -70,11 +70,18 @@
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "cd web/themes/custom/ukd8 && npm install"
+            "cd web/themes/custom/ukd8 && npm install",
+	        "@dev-tools-permissions-fix"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "cd web/themes/custom/ukd8 && npm install"
+            "cd web/themes/custom/ukd8 && npm install",
+	        "@dev-tools-permissions-fix"
+        ],
+        "dev-tools-permissions-fix": [
+            "chmod 755 .ddev/gitpod-setup-ddev.sh",
+            "chmod 755 .ddev/run-phpstorm.sh",
+            "chmod 755 .ddev/uk-site-install.sh"
         ]
     },
     "extra": {
