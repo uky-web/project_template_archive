@@ -2,7 +2,19 @@
 
 This project template provides a starter kit for managing your site dependencies with [Composer](). It is a variation of the official [Drupal Composer](https://github.com/drupal-composer/drupal-project) Drupal project starter kit, with additions and modifications specific to the Univeristy of Kentucky web platform. 
 
-## What does the template do?
+## UK Specific Modifications
+
+This version of the Drupal Project makes the following modifications to the default drupal-composer project
+
+* Adds the UK composer repository (satis.uky.dev)
+* Adds the UK Installation Profile as a requirement
+* Removes Drupal Core as a requirement (it is managed by the Installation Profile)
+* Adds additional installer types for npm, bower, and custom drupal themes, modules, and profiles. 
+* Adds specific installer paths for those new installer types.
+* Runs npm install specifically for the UK base theme.
+* Provides a default.settings.php that enables local settings files, and loads database configuration values from environment variables.
+* Provides default database connection settings that correspond to the `mysql` service available in the [Dev Container](https://gitlab.com/uky-web/university-web-platform/drupal-8/devcontainer).
+* Provides the [UKY Platform Dev Tools](https://gitlab.com/uky-web/university-web-platform/drupal-8/uky_platform_dev_tools) package which has default configuration for using [gitpod.io](https://gitpod.io) / [ddev](https://ddev.readthedocs.io/en/stable/) for development or [lando](https://docs.lando.dev/config/drupal9.html) for local development.
 
 When installing the given `composer.json` some tasks are taken care of:
 
@@ -21,18 +33,6 @@ When installing the given `composer.json` some tasks are taken care of:
 * Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
 * Creates environment variables based on your .env file. See [.env.example](.env.example).
 
-
-## UK Specific Modifications
-This version of the Drupal Project makes the following modifications to the default drupal-composer project
-
-* Adds the UK composer repository (satis.uky.dev)
-* Adds the UK Installation Profile as a requirement
-* Removes Drupal Core as a requirement (it is managed by the Installation Profile)
-* Adds additional installer types for npm, bower, and custom drupal themes, modules, and profiles. 
-* Adds specific installer paths for those new installer types.
-* Runs npm install specifically for the UK base theme.
-* Provides a default.settings.php that enables local settings files, and loads database configuration values from environment variables.
-* Provides default database connection settings that correspond to the `mysql` service available in the [Dev Container](https://gitlab.com/uky-web/university-web-platform/drupal-8/devcontainer).
 
 ## Managing Drupal Core
 If your site project uses the UK installation profie, it's recommended to allow the installation profile to define the Drupal Core dependency. If you use this project template without the UK installation profile, you will need to require Drupal Core in the projec template's composer.json file. See below for additional considerations.
