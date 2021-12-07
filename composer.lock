@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f30e071edb3ea7f133b83d05d3ae913f",
+    "content-hash": "b438673b0c5cac370db2cfcdeec1409b",
     "packages": [
         {
             "name": "ahebrank/eck_autolabel",
@@ -346,7 +346,7 @@
             "version": "v2.1.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:metafizzy/outlayer.git",
+                "url": "https://github.com/metafizzy/outlayer.git",
                 "reference": "bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878"
             },
             "dist": {
@@ -6860,6 +6860,10 @@
                 {
                     "name": "dahousecat",
                     "homepage": "https://www.drupal.org/user/1410992"
+                },
+                {
+                    "name": "daniel_j",
+                    "homepage": "https://www.drupal.org/user/970952"
                 }
             ],
             "description": "Allows searching through the kint dump",
@@ -7717,16 +7721,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.38",
+            "version": "8.12.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "0a6293c57de9256f4bd0d673280fbfbfd1e47533"
+                "reference": "6ae517989e96f069141ffeb56ccbbd849520f6ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/0a6293c57de9256f4bd0d673280fbfbfd1e47533",
-                "reference": "0a6293c57de9256f4bd0d673280fbfbfd1e47533",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/6ae517989e96f069141ffeb56ccbbd849520f6ff",
+                "reference": "6ae517989e96f069141ffeb56ccbbd849520f6ff",
                 "shasum": ""
             },
             "require": {
@@ -7786,7 +7790,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2021-11-26T08:32:55+00:00"
+            "time": "2021-12-07T08:51:54+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -12935,11 +12939,11 @@
         },
         {
             "name": "uky-web/uky_platform_dev_tools",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab+deploy-token-666097:HihAWDUfsqHg722xJwR8@gitlab.com/uky-web/university-web-platform/drupal-8/uky_platform_dev_tools.git",
-                "reference": "34aa71eda57a62d83f57808e2b82a58d629c93d7"
+                "reference": "75b17f893f2acee79cf25f673077abd7510f0d70"
             },
             "require": {
                 "drupal/devel": "^4.0",
@@ -13027,7 +13031,7 @@
                 }
             ],
             "description": "This is used to install the development tools for the uky web platform.",
-            "time": "2021-12-06T21:13:24+00:00"
+            "time": "2021-12-07T20:29:38+00:00"
         }
     ],
     "aliases": [],
