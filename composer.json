@@ -24,7 +24,7 @@
         }
     ],    
     "require-dev": {
-	    "uky-web/uky_platform_dev_tools": "^1.0.1"
+	    "uky-web/uky_platform_dev_tools": "^1.0.2"
     },
     "require": {
         "php": ">=7.0.8",
@@ -79,7 +79,6 @@
 	        "@dev-tools-permissions-fix"
         ],
         "dev-tools-permissions-fix": [
-            "chmod 755 .ddev/gitpod-setup-ddev.sh",
             "chmod 755 .ddev/run-phpstorm.sh",
             "chmod 755 .ddev/uk-site-install.sh"
         ]
