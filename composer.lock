@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7b4ced17f4133d00ab87f035c41998d",
+    "content-hash": "cfd797178fc1a0a2e278eb1cfe6c611c",
     "packages": [
         {
             "name": "ahebrank/eck_autolabel",
@@ -2385,7 +2385,7 @@
             "extra": {
                 "drupal": {
                     "version": "3.1.0",
-                    "datestamp": "1643097060",
+                    "datestamp": "1643742891",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12589,11 +12589,11 @@
         },
         {
             "name": "uky-web/uky_base",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://gitlab.com/uky-web/university-web-platform/drupal-8/uky_base",
-                "reference": "7dd87849d572741e74d737d36271660d71e395bf"
+                "reference": "ec2371cc469d9a5e0452fbbb3d483905cdec20e8"
             },
             "require": {
                 "ahebrank/eck_autolabel": "dev-8.x-1.x",
@@ -12726,7 +12726,7 @@
             "support": {
                 "source": "https://gitlab.com/uky-web/university-web-platform/drupal-8/ukd8-install-profile"
             },
-            "time": "2022-01-25T21:28:24+00:00"
+            "time": "2022-02-11T15:35:08+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
