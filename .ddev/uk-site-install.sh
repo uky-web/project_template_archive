@@ -11,7 +11,7 @@ if [ -f "reference/sanitized.sql" ]
     ddev drush cr
     ddev drush cim -y
     ddev drush cr
-    ddev composer update
+    composer update
     ddev drush cr
     ddev drush user:create admin --password="admin"
     ddev drush urol "administrator" admin
@@ -23,7 +23,7 @@ if [ -f "reference/sanitized.sql" ]
         ddev drush en stage_file_proxy
         ddev drush cr
         ddev drush config-set stage_file_proxy.settings origin $siteurl -y
-        ddev drush config-set stage_file_proxy.settings hotlink true -y
+        #ddev drush config-set stage_file_proxy.settings hotlink true -y
         ddev drush cr
         echo "Stage File Proxy enabled and configured..."
     fi
