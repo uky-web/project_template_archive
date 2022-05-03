@@ -1,0 +1,10 @@
+uuid: 09157fe2-bff3-4077-b11f-1e23f82211cc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 8NvKlpZ3he7lKQg8LRHR4BHaviytnKoCfdnreafmvNY
+id: design_block_reference
+label: 'Design block reference'
+revision: 0
+description: 'Insert a collection item (normally used in a slab) as a block'

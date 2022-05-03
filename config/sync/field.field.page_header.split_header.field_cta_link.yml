@@ -1,0 +1,25 @@
+uuid: 2cdc2b17-6ca4-4bda-926e-cb4f5d5f068a
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.split_header
+    - field.storage.page_header.field_cta_link
+  module:
+    - link
+_core:
+  default_config_hash: 7XceDcheuvlo8_TIkpc_HSrviT7NxbV199J1bAgMDAg
+id: page_header.split_header.field_cta_link
+field_name: field_cta_link
+entity_type: page_header
+bundle: split_header
+label: 'CTA Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,22 @@
+uuid: 37563021-8e06-4721-8a54-69037614d9e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - media
+_core:
+  default_config_hash: 09Z0wuPrUrSskt1-ybv9pgAscIQoocwC57tOnR7jqbA
+id: page_header.field_media
+field_name: field_media
+entity_type: page_header
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

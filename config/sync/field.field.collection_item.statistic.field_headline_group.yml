@@ -1,0 +1,30 @@
+uuid: c227ea83-0986-4ce8-a4f2-291f654156b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.statistic
+    - field.storage.collection_item.field_headline_group
+  module:
+    - headline_group
+_core:
+  default_config_hash: yFj1kH5CKqz4u7L9YLBFpAwY-gpKp1Ix2k7uQaG09hg
+id: collection_item.statistic.field_headline_group
+field_name: field_headline_group
+entity_type: collection_item
+bundle: statistic
+label: 'Headline group'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    superhead: ''
+    headline: ''
+    subhead: ''
+default_value_callback: ''
+settings:
+  include_superhead: 0
+  title_behavior: headline_is_title
+  include_subhead: include_subhead
+field_type: headline_group

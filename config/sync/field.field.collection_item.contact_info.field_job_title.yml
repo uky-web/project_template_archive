@@ -1,0 +1,21 @@
+uuid: d9c4ac64-7521-47f4-8564-cbc0f2cc4da8
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.contact_info
+    - field.storage.collection_item.field_job_title
+_core:
+  default_config_hash: 8TlAiwMUAhQUJiodaxwJMhH3HATaYbxRFzw9vLWYzp8
+id: collection_item.contact_info.field_job_title
+field_name: field_job_title
+entity_type: collection_item
+bundle: contact_info
+label: 'Job Title (or Subhead)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

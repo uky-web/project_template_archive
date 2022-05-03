@@ -1,0 +1,196 @@
+uuid: 27652a9e-468f-419e-ae72-0086410f7e87
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser_modal
+    - field.field.node.news.body
+    - field.field.node.news.field_byline
+    - field.field.node.news.field_categories
+    - field.field.node.news.field_header_style
+    - field.field.node.news.field_headline_group
+    - field.field.node.news.field_media
+    - field.field.node.news.field_paragraphs
+    - node.type.news
+  module:
+    - chosen_field
+    - entity_browser
+    - field_group
+    - headline_group
+    - paragraphs
+    - paragraphs_previewer_popup
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_tabs:
+      children:
+        - group_news_article_details
+        - group_body_content
+      parent_name: ''
+      weight: 1
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: Tabs
+    group_news_article_details:
+      children:
+        - field_headline_group
+        - field_byline
+        - field_categories
+      parent_name: group_tabs
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: 'News Article Details'
+    group_body_content:
+      children:
+        - field_header_style
+        - field_media
+        - body
+        - field_paragraphs
+      parent_name: group_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Body Content'
+_core:
+  default_config_hash: sb0TuGNhHZbBIiHcWpngGicWcHJukk-TXeRcZpciZXc
+id: node.news.default
+targetEntityType: node
+bundle: news
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 28
+    settings:
+      rows: 9
+      placeholder: ''
+      summary_rows: 3
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_byline:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_categories:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
+  field_header_style:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
+  field_headline_group:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_complete
+    region: content
+  field_media:
+    weight: 27
+    settings:
+      entity_browser: media_browser_modal
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: half_width
+    third_party_settings: {  }
+    type: entity_browser_entity_reference
+    region: content
+  field_paragraphs:
+    weight: 29
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+    third_party_settings:
+      paragraphs_previewer_popup:
+        enable: '1'
+    type: entity_reference_paragraphs
+    region: content
+  path:
+    type: path
+    weight: 8
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 12
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    region: content
+    third_party_settings: {  }
+  url_redirects:
+    weight: 9
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

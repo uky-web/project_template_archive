@@ -1,0 +1,37 @@
+uuid: 94134492-f8cd-4acc-a100-9ccef7ea8c78
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.statistic
+    - field.field.collection_item.statistic.field_description
+    - field.field.collection_item.statistic.field_headline_group
+  module:
+    - headline_group
+    - text
+_core:
+  default_config_hash: '-_6JetCkm6ood0rt6ezYG8zrujLRY4wsizgvpoHQKhQ'
+id: collection_item.statistic.default
+targetEntityType: collection_item
+bundle: statistic
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: div
+      headline_group_class: headline-group
+      headline_group_bem: true
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+hidden:
+  title: true

@@ -1,0 +1,39 @@
+uuid: 291a46fe-d2af-443f-86af-03d1073ddab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contacts
+    - field.field.block_content.contacts.field_contacts
+    - field.field.block_content.contacts.field_link
+  module:
+    - link
+_core:
+  default_config_hash: 2_Ad2vYNhc4N8E0jRsYgNfX0P6SJRInfbtpDOgxFDvw
+id: block_content.contacts.default
+targetEntityType: block_content
+bundle: contacts
+mode: default
+content:
+  field_contacts:
+    weight: 0
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

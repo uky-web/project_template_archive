@@ -1,0 +1,34 @@
+uuid: 6bc526a8-ba0c-46bd-887e-e3fa9efb7cdf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.split_header
+    - field.storage.page_header.field_media
+    - media.type.hosted_video
+    - media.type.image
+    - media.type.video
+_core:
+  default_config_hash: 1AjH6eLEuJmW6_nFHp-Ogol5dX7IXashqCVHGgXkKM4
+id: page_header.split_header.field_media
+field_name: field_media
+entity_type: page_header
+bundle: split_header
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      hosted_video: hosted_video
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: hosted_video
+field_type: entity_reference

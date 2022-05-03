@@ -1,0 +1,21 @@
+uuid: 3be690d8-743e-4812-87b4-47b900d5f0f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.pullquote
+    - field.storage.collection_item.field_attribution_1
+_core:
+  default_config_hash: wbpxQg6Ra5xCnpsytdodsS1KAjlEFGjqd7EsIfeCZRc
+id: collection_item.pullquote.field_attribution_1
+field_name: field_attribution_1
+entity_type: collection_item
+bundle: pullquote
+label: 'Attribution 1'
+description: 'First line of attribution (probably a name)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

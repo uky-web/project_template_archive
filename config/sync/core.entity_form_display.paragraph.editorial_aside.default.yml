@@ -1,0 +1,74 @@
+uuid: c166e626-5dfb-4925-8580-e750cc35ba65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.editorial_aside.field_aside
+    - field.field.paragraph.editorial_aside.field_flip
+    - field.field.paragraph.editorial_aside.field_headline_group
+    - field.field.paragraph.editorial_aside.field_main
+    - paragraphs.paragraphs_type.editorial_aside
+  module:
+    - entity_browser_entity_form
+    - headline_group
+    - inline_entity_form
+_core:
+  default_config_hash: TAP69yqo6vNM_gzPbB18HC-hpfPwJMWz58GXcitLIHI
+id: paragraph.editorial_aside.default
+targetEntityType: paragraph
+bundle: editorial_aside
+mode: default
+content:
+  field_aside:
+    weight: 2
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: aside
+      label_plural: asides
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_flip:
+    weight: 3
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_headline_only
+    region: content
+  field_main:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'main content'
+      label_plural: 'main content items'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

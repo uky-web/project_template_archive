@@ -1,0 +1,7 @@
+_core:
+  default_config_hash: XgLAayuNQWZyS-WwZ6gpj_ys1-IrZS6vlMSdqrpbPaA
+override: false
+show_block: false
+alert_level: warning
+alert_title: ''
+alert_message: ''

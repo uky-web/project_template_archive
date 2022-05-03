@@ -1,0 +1,98 @@
+uuid: b0a2aa9a-8f81-4888-8ba2-a08fe2bba25c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.event.body
+    - field.field.node.event.field_all_day
+    - field.field.node.event.field_categories
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_header_style
+    - field.field.node.event.field_headline_group
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media
+    - field.field.node.event.field_paragraphs
+    - node.type.event
+  module:
+    - datetime_range
+    - entity_reference_revisions
+    - headline_group
+    - text
+    - user
+_core:
+  default_config_hash: nJHh6UsUUaUKT6JwGcPkNxCz-rQyyWJaFUvaZ90xyOY
+id: node.event.default
+targetEntityType: node
+bundle: event
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categories:
+    weight: 4
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dates:
+    weight: 3
+    label: hidden
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_headline_group:
+    type: headline_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      headline_group_tag: h1
+      headline_group_class: headline-group
+      headline_group_bem: '1'
+    third_party_settings: {  }
+  field_location:
+    weight: 6
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_media:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_paragraphs:
+    weight: 7
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_all_day: true
+  field_header_style: true

@@ -1,0 +1,11 @@
+uuid: 69c79320-0c31-43d6-8752-997d44386066
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.page_header
+_core:
+  default_config_hash: F_r8EYda_qkB-4ZI0_jYT_ENjhY_WDZaS_NwbdpqlS0
+type: text_only
+name: Text-only
+description: 'Text-only page header with optional CTA'

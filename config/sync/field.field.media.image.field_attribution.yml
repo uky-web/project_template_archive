@@ -1,0 +1,21 @@
+uuid: 773b1e4f-b121-47dd-aee4-5cbadab87a2a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_attribution
+    - media.type.image
+_core:
+  default_config_hash: eCtKrdJgWPGZM1khHUDrPKIus4kgEhCSztJiOs-MNwU
+id: media.image.field_attribution
+field_name: field_attribution
+entity_type: media
+bundle: image
+label: Attribution
+description: 'Image credit, rights, or attribution'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

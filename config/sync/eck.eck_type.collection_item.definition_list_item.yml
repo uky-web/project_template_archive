@@ -1,0 +1,11 @@
+uuid: ea0191a8-66f2-49c1-bda8-87d210536271
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: Kvrr0T9xygPwQixHP_4Bwowr7zISRr1s1k2eHMaK5L0
+type: definition_list_item
+name: 'Definition List Item'
+description: 'A dt / dd pair'

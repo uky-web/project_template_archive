@@ -1,0 +1,24 @@
+uuid: c4880147-6ebe-48ac-bfb5-79079896e7ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.content_reference
+    - field.field.collection_item.content_reference.field_content
+  module:
+    - chosen_field
+_core:
+  default_config_hash: HdgdBIGrPA8ulfJRyR1vn9xG7tpcSoB_X7FlDisvO8U
+id: collection_item.content_reference.default
+targetEntityType: collection_item
+bundle: content_reference
+mode: default
+content:
+  field_content:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: chosen_select
+    region: content
+hidden:
+  title: true

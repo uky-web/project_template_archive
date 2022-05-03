@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 7BecJ955X7ZSC17wKfd6Tep5BfgGbRdPZhgk0evx-iw
+status: '1'
+pattern: '[page_header:field_headline_group:headline]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - eck.eck_type.page_header.full_width

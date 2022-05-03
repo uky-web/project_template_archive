@@ -1,0 +1,38 @@
+uuid: 3a98db5e-1935-411b-be42-8bfb011d88de
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.body
+    - eck.eck_type.collection_item.call_to_action
+    - eck.eck_type.collection_item.link_collection
+    - eck.eck_type.collection_item.media_figure
+    - eck.eck_type.collection_item.pullquote
+    - field.storage.paragraph.field_main
+    - paragraphs.paragraphs_type.2_1_slab
+_core:
+  default_config_hash: rgo48ReAea83k2NEhCIwJbYpz-daHwzMh_0iciYUozE
+id: paragraph.2_1_slab.field_main
+field_name: field_main
+entity_type: paragraph
+bundle: 2_1_slab
+label: Main
+description: '2/3 width'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      body: body
+      call_to_action: call_to_action
+      link_collection: link_collection
+      media_figure: media_figure
+      pullquote: pullquote
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: call_to_action
+field_type: entity_reference

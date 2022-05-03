@@ -1,0 +1,30 @@
+uuid: 7d8a2368-e7bc-4be4-ae28-ab5bbdaea39c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.location.linked_location
+    - field.storage.node.field_location
+    - node.type.event
+_core:
+  default_config_hash: olwh9DOZF-W9fxpq8HrfWjla0UTfnTzS_t9TR_5jCX0
+id: node.event.field_location
+field_name: field_location
+entity_type: node
+bundle: event
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:location'
+  handler_settings:
+    target_bundles:
+      linked_location: linked_location
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

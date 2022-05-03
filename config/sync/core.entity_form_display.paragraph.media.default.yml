@@ -1,0 +1,30 @@
+uuid: f2583a14-0052-47f0-90f6-c9b1abe40d2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_collection_item
+    - paragraphs.paragraphs_type.media
+  module:
+    - inline_entity_form
+_core:
+  default_config_hash: hYKFSIiK-KNWQAyER1HYJhgFt5VK5ce6DS6WWnVSNTE
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_collection_item:
+    weight: 0
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'media item'
+      label_plural: 'media items'
+    third_party_settings: {  }
+    type: inline_entity_form_simple
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

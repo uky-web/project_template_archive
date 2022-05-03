@@ -1,0 +1,31 @@
+uuid: 77d0e501-5dac-4345-ba41-3796c2bf1946
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories
+    - node.type.news
+    - taxonomy.vocabulary.news_events_categories
+_core:
+  default_config_hash: uHH61pBY3paLW0bmO9d7F6HW5_1jgg3oA2ve-uSJppI
+id: node.news.field_categories
+field_name: field_categories
+entity_type: node
+bundle: news
+label: Categories
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      news_events_categories: news_events_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

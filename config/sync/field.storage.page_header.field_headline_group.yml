@@ -1,0 +1,21 @@
+uuid: f989d00a-c79d-4402-aa37-607531ab1b47
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - headline_group
+_core:
+  default_config_hash: AvIuWupDqQpgO7FY2le3hhNv4zzs8boOVop0qPWVK7g
+id: page_header.field_headline_group
+field_name: field_headline_group
+entity_type: page_header
+type: headline_group
+settings: {  }
+module: headline_group
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,46 @@
+uuid: 69cedea0-23f8-4420-8c87-83a4467de669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.zipper.field_body
+    - field.field.paragraph.zipper.field_collection_items
+    - field.field.paragraph.zipper.field_headline_group
+    - paragraphs.paragraphs_type.zipper
+  module:
+    - headline_group
+    - text
+_core:
+  default_config_hash: diw1Jl6h2EgWP9bBTIyYp8MzANa3utdRxffUTmrFm-w
+id: paragraph.zipper.default
+targetEntityType: paragraph
+bundle: zipper
+mode: default
+content:
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_collection_items:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_headline_group:
+    weight: 0
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: ''
+      headline_group_bem: '1'
+    third_party_settings: {  }
+    type: headline_default
+    region: content
+hidden: {  }

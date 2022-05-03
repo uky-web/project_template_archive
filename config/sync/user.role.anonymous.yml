@@ -1,0 +1,40 @@
+uuid: 863f5453-7e42-443e-95cb-a2bd4d946890
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - embederator
+    - media
+    - paragraphs_type_permissions
+    - search
+    - system
+    - video_embed_field
+_core:
+  default_config_hash: TZEPJbmlf2e-LDy88XQd9osV9xUlu3dvFVRspzo8NQQ
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'never autoplay videos'
+  - 'search content'
+  - 'view any collection_item entities'
+  - 'view any location entities'
+  - 'view any page_header entities'
+  - 'view embederator entity'
+  - 'view media'
+  - 'view paragraph content 2_1_slab'
+  - 'view paragraph content body'
+  - 'view paragraph content calls_to_action'
+  - 'view paragraph content carousel'
+  - 'view paragraph content custom_teasers'
+  - 'view paragraph content editorial_aside'
+  - 'view paragraph content feed'
+  - 'view paragraph content flex_grid'
+  - 'view paragraph content gallery'
+  - 'view paragraph content link_lists'
+  - 'view paragraph content media'
+  - 'view paragraph content statistics'
+  - 'view paragraph content zipper'

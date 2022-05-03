@@ -1,0 +1,47 @@
+uuid: 1fc97952-875e-49cc-8ccd-fd697e871f54
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link_lists.field_collection_items
+    - field.field.paragraph.link_lists.field_headline_group
+    - paragraphs.paragraphs_type.link_lists
+  module:
+    - entity_browser_entity_form
+    - headline_group
+    - inline_entity_form
+_core:
+  default_config_hash: xvL2-mUS8cT1WViVocHUujfwKWaE7QS-oAUhTDtr9Zc
+id: paragraph.link_lists.default
+targetEntityType: paragraph
+bundle: link_lists
+mode: default
+content:
+  field_collection_items:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'link list'
+      label_plural: 'link lists'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_headline_only
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,46 @@
+uuid: f70cf490-336b-4642-a045-74ede7e63012
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.link_collection
+    - field.field.collection_item.link_collection.field_described_links
+    - field.field.collection_item.link_collection.field_description
+  module:
+    - described_link
+    - text
+_core:
+  default_config_hash: 4yi2Psq2dAJJb74yVdLFkqKSlqupv-ZSuRoits1gikI
+id: collection_item.link_collection.default
+targetEntityType: collection_item
+bundle: link_collection
+mode: default
+content:
+  field_described_links:
+    weight: -3
+    label: hidden
+    settings:
+      trim_length: '80'
+      url_only: ''
+      url_plain: ''
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: described_link_default
+    region: content
+  field_description:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

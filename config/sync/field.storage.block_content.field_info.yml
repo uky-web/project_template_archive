@@ -1,0 +1,22 @@
+uuid: 508cb270-c036-40bf-b9f7-6f3ec27d90e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - eck
+_core:
+  default_config_hash: VhT8wxnEQ-xYuBwqSscmXNYEhlO3nWVWfl0kN9opeTU
+id: block_content.field_info
+field_name: field_info
+entity_type: block_content
+type: entity_reference
+settings:
+  target_type: collection_item
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

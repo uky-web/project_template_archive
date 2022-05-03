@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: ScKqybx2fc3YwzqZhzEWUA6p8KUvXXvAB5OG8qZWxc0
+langcode: en
+uuid: 5280a022-ecdb-4576-85d7-dbfa3ea7436a
+name: 'Healing Study'
+mail: noreply@uky.edu
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,27 @@
+uuid: 221685e2-4c96-491c-b742-74d971b03da0
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - ukd8
+_core:
+  default_config_hash: SpuRpIsSRJ1yDGQsYI-hnf-Rc_u_VC4KdRtqbQM12cU
+id: uky_tools
+theme: ukd8
+region: content_prefix
+weight: -8
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

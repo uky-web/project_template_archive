@@ -1,0 +1,57 @@
+uuid: b29abaf1-38d5-4d6c-90f4-8abb79db8897
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.pullquote
+    - field.field.collection_item.pullquote.field_attribution_1
+    - field.field.collection_item.pullquote.field_attribution_2
+    - field.field.collection_item.pullquote.field_brief
+    - field.field.collection_item.pullquote.field_description
+    - field.field.collection_item.pullquote.field_media
+    - field.field.collection_item.pullquote.field_theme_color_scheme
+  module:
+    - text
+_core:
+  default_config_hash: D262nwA1q-VyVP01SE06Rdp0FdCxahKeXFOlk9hJW34
+id: collection_item.pullquote.default
+targetEntityType: collection_item
+bundle: pullquote
+mode: default
+content:
+  field_attribution_1:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_attribution_2:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_media:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: thumbnail
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden:
+  field_brief: true
+  field_theme_color_scheme: true
+  title: true

@@ -1,0 +1,19 @@
+uuid: 2fbf738f-6e04-4807-b4a4-eeb0ca53935d
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+_core:
+  default_config_hash: kTQG4c7pY6CHLLH0kqCR_BL2WNe5p3txDkRBJhTPYeY
+name: big_16x9
+label: 'Big 16x9'
+effects:
+  7bfc8a31-8e9d-4f87-bbb4-86845e10c18b:
+    uuid: 7bfc8a31-8e9d-4f87-bbb4-86845e10c18b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 900
+      crop_type: focal_point

@@ -1,0 +1,30 @@
+uuid: ec96bb9a-e799-4061-a3ee-524bf777e4a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.pullquote
+    - field.storage.collection_item.field_media
+    - media.type.image
+_core:
+  default_config_hash: QBy32TyKXjRj_juGjXdaBpQNOecoCMdwSw2pJcr7IgA
+id: collection_item.pullquote.field_media
+field_name: field_media
+entity_type: collection_item
+bundle: pullquote
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

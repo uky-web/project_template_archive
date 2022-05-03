@@ -1,0 +1,24 @@
+uuid: 484a7d9b-e086-4a99-9c94-eaa813ae7ef3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_video_embed_field
+    - media.type.hosted_video
+  module:
+    - video_embed_field
+_core:
+  default_config_hash: HO4sgn4DGKxmWOb28VPeYdtjxIi5O-cfnmUQ09buLro
+id: media.hosted_video.field_media_video_embed_field
+field_name: field_media_video_embed_field
+entity_type: media
+bundle: hosted_video
+label: 'Video Url'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers: {  }
+field_type: video_embed_field

@@ -1,0 +1,10 @@
+uuid: 8ad066ad-0def-4aa0-a928-4045b239aa5d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: BHEYJ_cvwzpitX0caG0Ee8Qg5Z7L5ceBdqAbQkonEaU
+id: table
+label: Table
+revision: 0
+description: 'A two-column tabular presentation for e.g., name and phone number'

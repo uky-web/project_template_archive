@@ -1,0 +1,22 @@
+uuid: 0011a852-cf56-4df2-867c-3a60475fac24
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - paragraphs
+_core:
+  default_config_hash: Qaqk0TCJ3a1Gi_LEomhLymgsNtpMGc0vWv2eXsjxflg
+id: paragraph.field_collection_item
+field_name: field_collection_item
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: collection_item
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

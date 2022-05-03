@@ -1,0 +1,23 @@
+uuid: f9afd92a-8f3c-44db-a5cb-5bc5b4de10c5
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: Z74bCJNDNk60hBh-_r40y-vB2Tn4WukN5_NQjVT5zzw
+id: page_header.field_theme_color_scheme
+field_name: field_theme_color_scheme
+entity_type: page_header
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

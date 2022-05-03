@@ -1,0 +1,30 @@
+uuid: ed0b87d9-0138-44eb-abc3-60d0d2031f51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_group
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - headline_group
+_core:
+  default_config_hash: lLQhexzQSbqH7KrCBOcAVe_uJsWnpIeB0W4HRhHGMBQ
+id: paragraph.carousel.field_headline_group
+field_name: field_headline_group
+entity_type: paragraph
+bundle: carousel
+label: 'Headline group'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    superhead: ''
+    headline: ''
+    subhead: ''
+default_value_callback: ''
+settings:
+  include_superhead: include_superhead
+  title_behavior: headline_is_blank
+  include_subhead: include_subhead
+field_type: headline_group

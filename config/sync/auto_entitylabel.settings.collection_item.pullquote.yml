@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: uCbCIc0olmvlllNrllKYxR7y2voQ2w13h5lwjXvEd48
+status: '1'
+pattern: '[collection_item:field_description:value]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - eck.eck_type.collection_item.pullquote

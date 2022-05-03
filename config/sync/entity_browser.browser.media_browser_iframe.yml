@@ -1,0 +1,76 @@
+uuid: fdc8a942-318f-4e51-9919-3148e55c7a94
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.image
+    - views.view.media_browser
+  module:
+    - dropzonejs_eb_widget
+    - entity_browser_entity_form
+    - media
+    - views
+_core:
+  default_config_hash: '-74QiOd2WNXMgX7dorSkdX3-E6u5SAqn-sNK1S8raoU'
+name: media_browser_iframe
+label: 'Media browser iframe'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '760'
+  link_text: 'Select media'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  3977638f-fe3f-4e3e-8079-b1e5a8cb476a:
+    settings:
+      submit_text: 'Select image'
+      upload_location: 'public://[date:custom:Y]-[date:custom:m]'
+      dropzone_description: 'Drop files here to upload them'
+      max_filesize: 100M
+      extensions: 'jpg jpeg gif png'
+      clientside_resize: false
+      resize_width: null
+      resize_height: null
+      resize_quality: !!float 1
+      resize_method: contain
+      thumbnail_method: contain
+      media_type: image
+      form_mode: default
+    uuid: 3977638f-fe3f-4e3e-8079-b1e5a8cb476a
+    weight: -9
+    label: 'Add image'
+    id: dropzonejs_media_entity_inline_entity_form
+  f7c6af85-316f-40c5-8a49-4785a562ad9f:
+    settings:
+      entity_type: media
+      bundle: hosted_video
+      form_mode: default
+      submit_text: 'Save video'
+    uuid: f7c6af85-316f-40c5-8a49-4785a562ad9f
+    weight: -8
+    label: 'Add hosted video'
+    id: entity_form
+  3d53559d-4c78-49b2-ba9a-04ecde5535e7:
+    settings:
+      view: media_browser
+      view_display: entity_browser_1
+      submit_text: 'Select media'
+      auto_select: false
+    uuid: 3d53559d-4c78-49b2-ba9a-04ecde5535e7
+    weight: -10
+    label: 'Browse media'
+    id: view
+  89cfe85c-298c-4668-a91b-fab632301137:
+    settings:
+      entity_type: media
+      bundle: audio
+      form_mode: default
+      submit_text: 'Save audio'
+    uuid: 89cfe85c-298c-4668-a91b-fab632301137
+    weight: 4
+    label: 'Add audio'
+    id: entity_form

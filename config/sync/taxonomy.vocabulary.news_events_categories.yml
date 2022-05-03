@@ -1,0 +1,10 @@
+uuid: 8ec79c38-710a-4c0a-94c6-f7e9c8c579d6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: hyTn0AtFLUh8tY61CVKiReQP-UZHgQz0VilrodQ0Ryk
+name: 'News and Events Categories'
+vid: news_events_categories
+description: ''
+weight: 0

@@ -1,0 +1,25 @@
+uuid: 39a351bc-8816-4b5d-920f-8f419d3d5339
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - field.storage.collection_item.field_button
+  module:
+    - link
+_core:
+  default_config_hash: xmUVxirxa4CDmywGONBpJJ3TcmFTmGXifjSLGVh5omA
+id: collection_item.call_to_action.field_button
+field_name: field_button
+entity_type: collection_item
+bundle: call_to_action
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

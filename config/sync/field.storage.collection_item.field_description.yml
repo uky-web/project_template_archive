@@ -1,0 +1,21 @@
+uuid: fbf0ee73-fe70-49c7-b096-3de3505ad33b
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - text
+_core:
+  default_config_hash: '-RkTasJ_HM978jsfPxv1hfo_p4N75fLiyZaelI1mDTQ'
+id: collection_item.field_description
+field_name: field_description
+entity_type: collection_item
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

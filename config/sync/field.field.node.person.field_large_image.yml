@@ -1,0 +1,30 @@
+uuid: 07475719-831b-4704-8aa4-3242392bf6c2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_large_image
+    - media.type.image
+    - node.type.person
+_core:
+  default_config_hash: jTrJncf0ksg-lGdkkB_3Vc-1yP3ZYGF67jU_Z4lLXLw
+id: node.person.field_large_image
+field_name: field_large_image
+entity_type: node
+bundle: person
+label: 'Large image'
+description: 'Optional large image. If selected, will display as the hero-style page header.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

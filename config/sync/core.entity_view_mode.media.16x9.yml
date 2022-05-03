@@ -1,0 +1,12 @@
+uuid: 72beda68-4d1f-4d13-9147-6405dd1cd63a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: aDno-O5LUOGnGilr4C-Z9CU7SsTMZZeH_SpM0XkdKZo
+id: media.16x9
+label: 16x9
+targetEntityType: media
+cache: true

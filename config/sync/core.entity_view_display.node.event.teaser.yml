@@ -1,0 +1,80 @@
+uuid: ec3e708b-fc7a-415f-b95a-2d76c4be50f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_all_day
+    - field.field.node.event.field_categories
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_header_style
+    - field.field.node.event.field_headline_group
+    - field.field.node.event.field_location
+    - field.field.node.event.field_media
+    - field.field.node.event.field_paragraphs
+    - node.type.event
+  module:
+    - datetime_range
+    - headline_group
+    - text
+    - user
+_core:
+  default_config_hash: saJ8zU2uiHrJofPWJ6j5nE9MEwBW5Omu-oQKZZhmGp8
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_categories:
+    type: entity_reference_label
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_dates:
+    type: daterange_default
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: long
+      separator: '-'
+    third_party_settings: {  }
+  field_headline_group:
+    type: headline_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      headline_group_tag: h2
+      headline_group_class: headline-group
+      headline_group_bem: '1'
+      headline_group_anchor: false
+    third_party_settings: {  }
+  field_media:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: 3x2
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_all_day: true
+  field_header_style: true
+  field_location: true
+  field_paragraphs: true
+  links: true

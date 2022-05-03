@@ -1,0 +1,22 @@
+uuid: 03802f4c-7d2e-4e64-ae79-8759aeba21bc
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ukd8
+_core:
+  default_config_hash: 7XWlq_BSziqvYWS5TMixFI17fxszsuufK2hJsIa31Os
+id: uky_local_tasks
+theme: ukd8
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

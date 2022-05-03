@@ -1,0 +1,20 @@
+uuid: 9a5c0344-c920-4fe0-9ced-ac4d4eb029ec
+langcode: en
+status: false
+dependencies:
+  theme:
+    - ukd8
+_core:
+  default_config_hash: RbkI3jzFybzEmT9cQQhNVlgeZni7QC9uolQFlimzzmY
+id: uky_page_title
+theme: ukd8
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

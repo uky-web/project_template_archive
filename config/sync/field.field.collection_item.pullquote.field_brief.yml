@@ -1,0 +1,25 @@
+uuid: e3da0973-a496-4316-a428-ce33e56e832c
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.pullquote
+    - field.storage.collection_item.field_brief
+_core:
+  default_config_hash: 5p8hB56T_JRMwmm3jVLGfA8rkMmoEuOVDhPJeG5N_MA
+id: collection_item.pullquote.field_brief
+field_name: field_brief
+entity_type: collection_item
+bundle: pullquote
+label: Brief
+description: 'Smaller text, suppress the image. Good for narrow columns.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

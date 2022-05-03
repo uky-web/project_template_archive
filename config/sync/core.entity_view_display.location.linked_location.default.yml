@@ -1,0 +1,46 @@
+uuid: 68b7fa70-2386-4152-89da-62b1789713bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.location.linked_location
+    - field.field.location.linked_location.field_address
+    - field.field.location.linked_location.field_link
+  module:
+    - link
+_core:
+  default_config_hash: aYmB4qQ9qhoKjxh-iv1AqeNv0mR5ys4hfUijOTwHd1c
+id: location.linked_location.default
+targetEntityType: location
+bundle: linked_location
+mode: default
+content:
+  field_address:
+    weight: -3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link:
+    weight: -4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

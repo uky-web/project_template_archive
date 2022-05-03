@@ -1,0 +1,30 @@
+uuid: 91a13c14-51b2-4a36-a9c5-5da19d2b9099
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_group
+    - paragraphs.paragraphs_type.2_1_slab
+  module:
+    - headline_group
+_core:
+  default_config_hash: 8mE7j9EhUykdOcnaeGfhUmlPeLbuhDl017Su7jAQ1AM
+id: paragraph.2_1_slab.field_headline_group
+field_name: field_headline_group
+entity_type: paragraph
+bundle: 2_1_slab
+label: 'Headline group'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    superhead: ''
+    headline: ''
+    subhead: ''
+default_value_callback: ''
+settings:
+  include_superhead: include_superhead
+  title_behavior: headline_is_blank
+  include_subhead: include_subhead
+field_type: headline_group

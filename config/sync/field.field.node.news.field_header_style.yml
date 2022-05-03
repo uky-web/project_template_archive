@@ -1,0 +1,25 @@
+uuid: c8b408b8-3c71-4007-8fb3-b8b99a70f66b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_style
+    - node.type.news
+_core:
+  default_config_hash: XDuj5dmz7EXVnBsDLmH7Y6-UmuCS48JCGlJatwUDD6Y
+id: node.news.field_header_style
+field_name: field_header_style
+entity_type: node
+bundle: news
+label: 'Header Style'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:page_header_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

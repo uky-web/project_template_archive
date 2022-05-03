@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: 49Cc9_UQ_21ErSpAylkJY-_e5k1LApWEgg7ghjWJx9U
+status: '1'
+pattern: '[collection_item:field_content:entity:title]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - eck.eck_type.collection_item.content_reference

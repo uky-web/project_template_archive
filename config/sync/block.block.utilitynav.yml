@@ -1,0 +1,39 @@
+uuid: 75ea7bee-8ba2-4eff-9d20-adb14fd67ca3
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.utility-nav
+  module:
+    - block_visibility_groups
+    - menu_block
+  theme:
+    - ukd8
+_core:
+  default_config_hash: wwMvOzuzuNQEm5B-f8Uf4PNApD2ydoZp61C6LGSqsos
+id: utilitynav
+theme: ukd8
+region: utility_nav
+weight: 0
+provider: null
+plugin: 'menu_block:utility-nav'
+settings:
+  id: 'menu_block:utility-nav'
+  label: 'Utility Nav'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'utility-nav:'
+  suggestion: utility_nav
+  label_type: block
+  label_link: false
+visibility:
+  condition_group:
+    id: condition_group
+    negate: false
+    context_mapping: {  }
+    block_visibility_group: ''

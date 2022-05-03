@@ -1,0 +1,34 @@
+uuid: 2e205df5-ef1f-49ab-9909-2588ca292a09
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.body
+    - field.field.collection_item.body.field_description
+    - field.field.collection_item.body.field_hide_heading
+  module:
+    - text
+_core:
+  default_config_hash: 6sfa1ewnY0g2_2kw_VCY31lUdVv79RfTulJDI1n7dRA
+id: collection_item.body.default
+targetEntityType: collection_item
+bundle: body
+mode: default
+content:
+  field_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_hide_heading: true

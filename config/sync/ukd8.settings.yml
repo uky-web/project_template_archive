@@ -1,0 +1,77 @@
+_core:
+  default_config_hash: 39fmAMf2-JDfGsNEW2WYE3ghb_To3VO4HlY0Xr-jXo0
+is_main: 0
+lockup_wordmark_1: HEALing
+lockup_wordmark_2: Communities
+uky_home_url: 'https://www.uky.edu/'
+college_url: ''
+college_title: ''
+show_college_under_lockup: 0
+scheme_options:
+  light: 'Light blue'
+  dark: 'Dark blue'
+  wildcat: Wildcat
+  white: White
+  gray: Gray
+scheme_settings:
+  page_header__full_width:
+    name: 'Full width hero page header'
+    value: white
+    disallowed:
+      - light
+      - gray
+  page_header__split_header:
+    name: 'Split hero page header'
+    value: light
+    disallowed:
+      - white
+  page_header__text_only:
+    name: 'Text-only page header'
+    value: white
+    disallowed:
+      - light
+  collection_item__call_to_action:
+    name: 'Call to Action block'
+    value: white
+    disallowed:
+      - gray
+      - wildcat
+  collection_item__pullquote:
+    name: Pullquote
+    value: white
+    disallowed:
+      - gray
+  paragraph__statistics:
+    name: 'Statistic block'
+    value: white
+    disallowed:
+      - light
+      - gray
+      - dark
+  paragraph__carousel:
+    name: 'Carousel slab'
+    value: white
+    disallowed:
+      - light
+layout_boolean_settings:
+  paragraph__statistics__divide:
+    name: 'Divide statistic collections'
+    value: false
+  paragraph__carousel__center:
+    name: 'Use centered carousel style'
+    value: false
+features:
+  favicon: 1
+logo:
+  use_default: 1
+favicon:
+  use_default: 1
+page_header__full_width: white
+page_header__split_header: light
+page_header__text_only: white
+collection_item__call_to_action: white
+collection_item__pullquote: white
+paragraph__statistics: white
+paragraph__carousel: white
+paragraph__statistics__divide: 0
+paragraph__carousel__center: 0

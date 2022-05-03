@@ -1,0 +1,96 @@
+uuid: dd1053a0-1992-4449-b337-493a48bd9eed
+langcode: en
+status: true
+dependencies:
+  module:
+    - better_formats
+    - contextual
+    - eck
+    - emergency_alerts
+    - media
+    - metatag
+    - node
+    - path
+    - shortcut
+    - system
+    - taxonomy
+    - toolbar
+_core:
+  default_config_hash: DsWwdtzhg77cVLn1Xm8iyp7GVWWuNbS_Ssmr4uZ5p_o
+id: content_manager
+label: 'Content Manager'
+weight: 4
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access media overview'
+  - 'access media_browser_iframe entity browser pages'
+  - 'access media_browser_modal entity browser pages'
+  - 'access site in maintenance mode'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access webform overview'
+  - 'access webform submission log'
+  - 'add embederator entity'
+  - 'administer emergency_alerts'
+  - 'administer menu'
+  - 'administer meta tags'
+  - 'administer redirect settings'
+  - 'administer redirects'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'administer xmlsitemap'
+  - 'bypass eck entity access'
+  - 'bypass field_group_settings field visibility'
+  - 'bypass node access'
+  - 'create audio media'
+  - 'create file media'
+  - 'create hosted_video media'
+  - 'create image media'
+  - 'create media'
+  - 'create terms in media_tags'
+  - 'create terms in news_events_categories'
+  - 'create terms in people_categories'
+  - 'create url aliases'
+  - 'create video media'
+  - 'create webform'
+  - 'customize shortcut links'
+  - 'delete any webform'
+  - 'delete any webform submission'
+  - 'delete embederator entity'
+  - 'delete terms in media_tags'
+  - 'delete terms in news_events_categories'
+  - 'delete terms in people_categories'
+  - 'edit any audio media'
+  - 'edit any file media'
+  - 'edit any hosted_video media'
+  - 'edit any image media'
+  - 'edit any video media'
+  - 'edit any webform'
+  - 'edit any webform submission'
+  - 'edit embederator entity'
+  - 'edit own audio media'
+  - 'edit own file media'
+  - 'edit own hosted_video media'
+  - 'edit own image media'
+  - 'edit own video media'
+  - 'edit own webform'
+  - 'edit terms in media_tags'
+  - 'edit terms in news_events_categories'
+  - 'edit terms in people_categories'
+  - 'hide format selection for paragraph'
+  - 'override event published option'
+  - 'override news authored on option'
+  - 'override news published option'
+  - 'override page published option'
+  - 'override person published option'
+  - 'update any media'
+  - 'update media'
+  - 'use text format basic_html'
+  - 'use text format inline_html'
+  - 'use text format restricted_html'
+  - 'view all media revisions'
+  - 'view any webform submission'
+  - 'view the administration theme'

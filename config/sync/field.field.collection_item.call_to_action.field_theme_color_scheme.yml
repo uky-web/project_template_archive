@@ -1,0 +1,21 @@
+uuid: e60c6bba-f21e-423d-9390-ea9f7de555c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - field.storage.collection_item.field_theme_color_scheme
+_core:
+  default_config_hash: IdTEo2kelZoJml7immwPb-DalTYZVMLFG0ojiOGlLOI
+id: collection_item.call_to_action.field_theme_color_scheme
+field_name: field_theme_color_scheme
+entity_type: collection_item
+bundle: call_to_action
+label: 'Color theme'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

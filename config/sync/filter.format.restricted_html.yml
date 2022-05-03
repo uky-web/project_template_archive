@@ -1,0 +1,53 @@
+uuid: 79f6be7d-c1dc-4676-8807-fb1d8d5b403d
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_embed
+    - linkit
+_core:
+  default_config_hash: 9AFIsxXk0CaBnJ9d_NUMocgsrYIy7qHQ45KEqYx8NyI
+name: 'Restricted HTML'
+format: restricted_html
+weight: -8
+filters:
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button> <p class="intro"> <a href hreflang data-entity-substitution data-entity-type data-entity-uuid title class="link--fancy">'
+      filter_html_help: true
+      filter_html_nofollow: false
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  linkit:
+    id: linkit
+    provider: linkit
+    status: true
+    weight: 0
+    settings:
+      title: true

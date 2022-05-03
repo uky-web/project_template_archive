@@ -1,0 +1,44 @@
+uuid: b8339676-e5a7-43f4-a5ab-61cbf5be8fb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.call_to_action
+    - eck.eck_type.collection_item.contact_info
+    - eck.eck_type.collection_item.content_reference
+    - eck.eck_type.collection_item.custom_teaser
+    - eck.eck_type.collection_item.link_collection
+    - eck.eck_type.collection_item.media_figure
+    - eck.eck_type.collection_item.pullquote
+    - eck.eck_type.collection_item.statistic
+    - field.storage.paragraph.field_aside
+    - paragraphs.paragraphs_type.2_1_slab
+_core:
+  default_config_hash: Rk6oaI1t2CRmG0WCD-Hec8kcXT5Vj1HNNu_1KkZasBI
+id: paragraph.2_1_slab.field_aside
+field_name: field_aside
+entity_type: paragraph
+bundle: 2_1_slab
+label: Aside
+description: '1/3 width'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:collection_item'
+  handler_settings:
+    target_bundles:
+      call_to_action: call_to_action
+      contact_info: contact_info
+      content_reference: content_reference
+      custom_teaser: custom_teaser
+      link_collection: link_collection
+      media_figure: media_figure
+      pullquote: pullquote
+      statistic: statistic
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: call_to_action
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 36d28f26-fd1d-4e57-a6ff-e09dbb388840
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: AUQe_mOZ5YGicuwOrQUMe4CPr3XZ-ZOpru6iVSodTBc
+id: location.field_address
+field_name: field_address
+entity_type: location
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

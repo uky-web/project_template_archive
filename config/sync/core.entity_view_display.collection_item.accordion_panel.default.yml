@@ -1,0 +1,32 @@
+uuid: 989d576c-3bbd-46b3-9399-32a2ea1b6f09
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.accordion_panel
+    - field.field.collection_item.accordion_panel.field_description
+  module:
+    - text
+_core:
+  default_config_hash: H3_Bf8cT9fYIYO0r2eUmUKwQ5gpbTjDhAjtKsg5DOEQ
+id: collection_item.accordion_panel.default
+targetEntityType: collection_item
+bundle: accordion_panel
+mode: default
+content:
+  field_description:
+    weight: -4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  title:
+    label: hidden
+    type: string
+    weight: -5
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

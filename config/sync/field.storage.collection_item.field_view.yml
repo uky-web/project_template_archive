@@ -1,0 +1,23 @@
+uuid: bd7f308d-5a65-4e64-9d27-e9443e93c29d
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+    - viewfield
+    - views
+_core:
+  default_config_hash: mxzp4avjPUwwTRuMdwmH8QwNZeuqWwiOYtQwAzk9voo
+id: collection_item.field_view
+field_name: field_view
+entity_type: collection_item
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

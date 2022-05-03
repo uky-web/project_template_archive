@@ -1,0 +1,11 @@
+uuid: eac13784-3dc7-4b9e-bd4b-4b2b4ceb7331
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_entity_type.collection_item
+_core:
+  default_config_hash: lxVA628vBHTZX6L_5KzMgV6bKXUKnSkh-JM6n-rpE7M
+type: accordion_panel
+name: 'Zipper Panel'
+description: 'Titled content within a zipper/accordion'

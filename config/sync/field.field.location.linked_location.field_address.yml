@@ -1,0 +1,21 @@
+uuid: 5a910c87-5c40-41e7-b3dc-b387627ce4b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.location.linked_location
+    - field.storage.location.field_address
+_core:
+  default_config_hash: 9asDZcLB2Clc_MvPWjYZIB-KQo2GrrMT-bcQDiSzIc8
+id: location.linked_location.field_address
+field_name: field_address
+entity_type: location
+bundle: linked_location
+label: Address
+description: 'If supplied, address will be converted into a Google map'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+_core:
+  default_config_hash: er_w4OhgaAP_KOgll4ti6NPWdCprSsa3dLBp__USk9I
+sids:
+  ukad: ukad
+authenticationMode: 2
+loginUIUsernameTxt: ''
+loginUIPasswordTxt: ''
+ldapUserHelpLinkUrl: ''
+ldapUserHelpLinkText: ''
+emailOption: 3
+emailUpdate: 1
+emailTemplateHandling: none
+emailTemplate: '@username@example.com'
+emailTemplateUsageResolveConflict: false
+emailTemplateUsageNeverUpdate: false
+emailTemplateUsagePromptUser: false
+emailTemplateUsageRedirectOnLogin: false
+emailTemplateUsagePromptRegex: '.*@example\\.com'
+passwordOption: 3
+allowOnlyIfTextInDn: {  }
+excludeIfTextInDn: {  }
+excludeIfNoAuthorizations: 0
+langcode: en

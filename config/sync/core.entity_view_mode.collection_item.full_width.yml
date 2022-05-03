@@ -1,0 +1,12 @@
+uuid: 91a57a58-3684-400f-921b-0b87b62c1eb2
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: F0SEjiONeCQjHY6r_9HuCDEGKXI0vjiPW1YDeQEIE-U
+id: collection_item.full_width
+label: 'Full width'
+targetEntityType: collection_item
+cache: true

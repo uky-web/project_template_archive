@@ -1,0 +1,29 @@
+uuid: 68ad2239-9c4b-467d-836a-ba3f0078563b
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: iBO985QJiWh9CqiJ-yTK9JoJA5MA24f78Rd95069fCM
+id: paragraph.field_theme_show_divisions
+field_name: field_theme_show_divisions
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'No'
+    -
+      value: '1'
+      label: 'Yes'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

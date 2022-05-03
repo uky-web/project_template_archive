@@ -1,0 +1,27 @@
+uuid: b33d6ee6-b59f-4a75-b38e-ce0bfa171e90
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - ukd8
+_core:
+  default_config_hash: 5I3OCA8Rb6LfERrDGbQsLeQAlfRS1T1L7qkgrdyzcEU
+id: uky_main_menu
+theme: ukd8
+region: top_nav
+weight: -6
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

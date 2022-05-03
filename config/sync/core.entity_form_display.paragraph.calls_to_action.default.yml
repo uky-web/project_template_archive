@@ -1,0 +1,47 @@
+uuid: 212b2e26-857c-43e1-958d-5934a55cad62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.calls_to_action.field_collection_items
+    - field.field.paragraph.calls_to_action.field_headline_group
+    - paragraphs.paragraphs_type.calls_to_action
+  module:
+    - entity_browser_entity_form
+    - headline_group
+    - inline_entity_form
+_core:
+  default_config_hash: 6P27ledqqbHt9Uoby8oAxVLmm1eOQ_8g48wdb5egw5A
+id: paragraph.calls_to_action.default
+targetEntityType: paragraph
+bundle: calls_to_action
+mode: default
+content:
+  field_collection_items:
+    weight: 1
+    settings:
+      form_mode: default
+      override_labels: true
+      label_singular: 'call to action'
+      label_plural: 'calls to action'
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      collapsible: false
+      collapsed: false
+      allow_duplicate: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_complex
+    region: content
+  field_headline_group:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: headline_headline_only
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

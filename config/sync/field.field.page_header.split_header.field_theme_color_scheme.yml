@@ -1,0 +1,21 @@
+uuid: 3e9855d8-06b7-4570-9f0b-38275bbc3b84
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.split_header
+    - field.storage.page_header.field_theme_color_scheme
+_core:
+  default_config_hash: kv7CW_bBGjFiv9Yaw1uqhmdDhokJ7_ShrkZTK5CKHH4
+id: page_header.split_header.field_theme_color_scheme
+field_name: field_theme_color_scheme
+entity_type: page_header
+bundle: split_header
+label: 'Color theme'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

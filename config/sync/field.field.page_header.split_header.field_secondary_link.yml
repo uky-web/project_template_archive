@@ -1,0 +1,25 @@
+uuid: 4d34dc2c-bc2a-4e36-8760-5341c00d83f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.page_header.split_header
+    - field.storage.page_header.field_secondary_link
+  module:
+    - link
+_core:
+  default_config_hash: TWZK2NAMuVnI4yzs2g_1AJLHV0zsCHTgN7cP9dgdys4
+id: page_header.split_header.field_secondary_link
+field_name: field_secondary_link
+entity_type: page_header
+bundle: split_header
+label: 'Secondary Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

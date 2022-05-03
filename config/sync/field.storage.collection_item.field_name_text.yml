@@ -1,0 +1,23 @@
+uuid: 5b47f132-2a74-4606-b4cf-bda43322b64f
+langcode: en
+status: true
+dependencies:
+  module:
+    - eck
+_core:
+  default_config_hash: pO9lgVtq1Pa6VIiUt7CckF4c81gRNK2fMFmoc9S7alQ
+id: collection_item.field_name_text
+field_name: field_name_text
+entity_type: collection_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

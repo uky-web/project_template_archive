@@ -1,0 +1,22 @@
+uuid: b0033099-309c-4a9d-a640-5ae54267eab8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - ukd8
+_core:
+  default_config_hash: 3AB8jvhcTpcwChiy3gUQGx6aGLzLWvgKdCjB-RxdXeA
+id: uky_help
+theme: ukd8
+region: content
+weight: -6
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

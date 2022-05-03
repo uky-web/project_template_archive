@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: ebev4XjcFetinPRucU-BB2BTzHWn5hhm8XwTSq08Skc
+status: '1'
+pattern: '[page_header:field_headline_group:headline]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - eck.eck_type.page_header.split_header

@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: ZZE2RH0jpvCJveG6rRyQXkehTe9C2ZxBJygvdD8tkDo
+status: '2'
+pattern: '[node:field_page_header:entity:field_headline_group:headline]'
+php: 0
+escape: 0
+dependencies:
+  config:
+    - node.type.page

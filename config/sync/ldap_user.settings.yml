@@ -1,0 +1,24 @@
+_core:
+  default_config_hash: oMI_gUgTCb7oZLkevWXurzMqwYZhpc1gg3k29UDFB6A
+drupalAcctProvisionServer: ukad
+ldapEntryProvisionServer: null
+drupalAcctProvisionTriggers:
+  drupal_on_login: drupal_on_login
+  drupal_on_update_create: '0'
+ldapEntryProvisionTriggers:
+  ldap_on_update_create: '0'
+  ldap_on_login: '0'
+  ldap_on_delete: '0'
+  drupal_on_manual_creation: '0'
+userUpdateCronQuery: none
+userUpdateCronInterval: monthly
+orphanedDrupalAcctBehavior: ldap_user_orphan_do_not_check
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: weekly
+userConflictResolve: resolve
+manualAccountConflict: conflict_associate
+acctCreation: ldap_behaviour
+ldapUserSyncMappings:
+  drupal: {  }
+  ldap: {  }
+disableAdminPasswordField: false

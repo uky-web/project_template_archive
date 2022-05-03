@@ -1,0 +1,36 @@
+uuid: 31029503-f84b-405c-9701-73d97a871c7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - eck.eck_type.collection_item.custom_teaser
+    - field.storage.collection_item.field_media
+    - media.type.audio
+    - media.type.hosted_video
+    - media.type.image
+    - media.type.video
+_core:
+  default_config_hash: VBnmxDUjdLkJNXsRE0Spaj88zMHQaYF0viB98dbKfhA
+id: collection_item.custom_teaser.field_media
+field_name: field_media
+entity_type: collection_item
+bundle: custom_teaser
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      audio: audio
+      hosted_video: hosted_video
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference
