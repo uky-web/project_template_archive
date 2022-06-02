@@ -51,7 +51,8 @@
         "optimize-autoloader": true,
         "gitlab-token": {
             "gitlab.com": "Zhqzs6MLWDrAyyR9fif4"
-        }
+        },
+        "allow-plugins": true
     },
     "autoload": {
         "classmap": [
