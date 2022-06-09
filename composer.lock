@@ -2730,17 +2730,17 @@
         },
         {
             "name": "drupal/better_exposed_filters",
-            "version": "5.0.0",
+            "version": "5.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/better_exposed_filters.git",
-                "reference": "8.x-5.0"
+                "reference": "8.x-5.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-5.0.zip",
-                "reference": "8.x-5.0",
-                "shasum": "ef575591af202b5c6867841ce58e1f447455e502"
+                "url": "https://ftp.drupal.org/files/projects/better_exposed_filters-8.x-5.1.zip",
+                "reference": "8.x-5.1",
+                "shasum": "ab9b124b5cf44dfb8164b66673bcf767986a64b2"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2752,8 +2752,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.0",
-                    "datestamp": "1634748760",
+                    "version": "8.x-5.1",
+                    "datestamp": "1654277146",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2972,17 +2972,17 @@
         },
         {
             "name": "drupal/chosen",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/chosen.git",
-                "reference": "3.0.2"
+                "reference": "3.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/chosen-3.0.2.zip",
-                "reference": "3.0.2",
-                "shasum": "fe0c9beeb160f986981c5487068db4926f076b0f"
+                "url": "https://ftp.drupal.org/files/projects/chosen-3.0.3.zip",
+                "reference": "3.0.3",
+                "shasum": "0093f31786e429b1a614159a658ca55d17ae3824"
             },
             "require": {
                 "drupal/chosen_lib": "*",
@@ -2992,8 +2992,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1646557968",
+                    "version": "3.0.3",
+                    "datestamp": "1654688115",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3055,7 +3055,7 @@
         },
         {
             "name": "drupal/chosen_lib",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "require": {
                 "drupal/chosen": "^3",
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -3064,8 +3064,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.0.2",
-                    "datestamp": "1646557968",
+                    "version": "3.0.3",
+                    "datestamp": "1654688115",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4483,17 +4483,17 @@
         },
         {
             "name": "drupal/easy_breadcrumb",
-            "version": "2.0.2",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/easy_breadcrumb.git",
-                "reference": "2.0.2"
+                "reference": "2.0.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-2.0.2.zip",
-                "reference": "2.0.2",
-                "shasum": "56dd4ab4a3795451210a5f8b835807cf3d38344e"
+                "url": "https://ftp.drupal.org/files/projects/easy_breadcrumb-2.0.3.zip",
+                "reference": "2.0.3",
+                "shasum": "da95aeef35f606b47291474152a0b3b464a07e8f"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -4501,8 +4501,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.2",
-                    "datestamp": "1639947418",
+                    "version": "2.0.3",
+                    "datestamp": "1654447758",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9172,16 +9172,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.12.49",
+            "version": "8.12.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "9f0b2147588f548a9382b89b59acd78172d49f7b"
+                "reference": "526c4b7f6d5e173770d8645e76340d7eb25dc348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/9f0b2147588f548a9382b89b59acd78172d49f7b",
-                "reference": "9f0b2147588f548a9382b89b59acd78172d49f7b",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/526c4b7f6d5e173770d8645e76340d7eb25dc348",
+                "reference": "526c4b7f6d5e173770d8645e76340d7eb25dc348",
                 "shasum": ""
             },
             "require": {
@@ -9241,7 +9241,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2022-05-27T15:38:27+00:00"
+            "time": "2022-06-09T14:55:00+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -10230,16 +10230,16 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.7.1",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "bcd869e2fe88d567800057c1434f2380354fe325"
+                "reference": "449c0405e182bfe77702604a474668fbb63e9907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/bcd869e2fe88d567800057c1434f2380354fe325",
-                "reference": "bcd869e2fe88d567800057c1434f2380354fe325",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/449c0405e182bfe77702604a474668fbb63e9907",
+                "reference": "449c0405e182bfe77702604a474668fbb63e9907",
                 "shasum": ""
             },
             "require": {
@@ -10285,7 +10285,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-01-21T15:50:46+00:00"
+            "time": "2022-06-09T08:43:49+00:00"
         },
         {
             "name": "league/container",
@@ -12436,6 +12436,7 @@
                     "type": "tidelift"
                 }
             ],
+            "abandoned": "symfony/error-handler",
             "time": "2022-04-12T15:19:55+00:00"
         },
         {
@@ -15741,21 +15742,21 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozarts/assert.git",
-                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25"
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozarts/assert/zipball/6964c76c7804814a842473e0c8fd15bab0f18e25",
-                "reference": "6964c76c7804814a842473e0c8fd15bab0f18e25",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/11cb2199493b2f8a3b53e7f19068fc6aac760991",
+                "reference": "11cb2199493b2f8a3b53e7f19068fc6aac760991",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0",
-                "symfony/polyfill-ctype": "^1.8"
+                "ext-ctype": "*",
+                "php": "^7.2 || ^8.0"
             },
             "conflict": {
                 "phpstan/phpstan": "<0.12.20",
@@ -15793,9 +15794,9 @@
             ],
             "support": {
                 "issues": "https://github.com/webmozarts/assert/issues",
-                "source": "https://github.com/webmozarts/assert/tree/1.10.0"
+                "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
-            "time": "2021-03-09T10:59:23+00:00"
+            "time": "2022-06-03T18:03:27+00:00"
         },
         {
             "name": "webmozart/path-util",
@@ -16204,5 +16205,5 @@
         "php": ">=7.0.8"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
