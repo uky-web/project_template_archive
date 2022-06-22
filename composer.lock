@@ -3760,24 +3760,24 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.4.1",
+            "version": "9.3.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614"
+                "reference": "20c4f2c5ad062295d5c40f42bc27547570513c8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
-                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
+                "url": "https://api.github.com/repos/drupal/core/zipball/20c4f2c5ad062295d5c40f42bc27547570513c8c",
+                "reference": "20c4f2c5ad062295d5c40f42bc27547570513c8c",
                 "shasum": ""
             },
             "require": {
-                "asm89/stack-cors": "^1.3",
-                "composer/semver": "^3.3",
-                "doctrine/annotations": "^1.13",
-                "doctrine/reflection": "^1.2",
-                "egulias/email-validator": "^2.1.22|^3.2",
+                "asm89/stack-cors": "^1.1",
+                "composer/semver": "^3.0",
+                "doctrine/annotations": "^1.12",
+                "doctrine/reflection": "^1.1",
+                "egulias/email-validator": "^2.1.22|^3.0",
                 "ext-date": "*",
                 "ext-dom": "*",
                 "ext-filter": "*",
@@ -3791,36 +3791,35 @@
                 "ext-spl": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
-                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
-                "laminas/laminas-diactoros": "^2.11",
-                "laminas/laminas-feed": "^2.17",
-                "masterminds/html5": "^2.7",
+                "guzzlehttp/guzzle": "^6.5.8",
+                "laminas/laminas-diactoros": "^2.1",
+                "laminas/laminas-feed": "^2.12",
+                "masterminds/html5": "^2.1",
                 "pear/archive_tar": "^1.4.14",
                 "php": ">=7.3.0",
-                "psr/log": "^1.1",
+                "psr/log": "^1.0",
                 "stack/builder": "^1.0",
-                "symfony-cmf/routing": "^2.3",
+                "symfony-cmf/routing": "^2.1",
                 "symfony/console": "^4.4",
                 "symfony/dependency-injection": "^4.4",
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/http-foundation": "^4.4.7",
                 "symfony/http-kernel": "^4.4",
                 "symfony/mime": "^5.4",
-                "symfony/polyfill-iconv": "^1.25",
-                "symfony/polyfill-php80": "^1.25",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-php80": "^1.16",
                 "symfony/process": "^4.4",
-                "symfony/psr-http-message-bridge": "^2.1",
+                "symfony/psr-http-message-bridge": "^2.0",
                 "symfony/routing": "^4.4",
                 "symfony/serializer": "^4.4",
                 "symfony/translation": "^4.4",
                 "symfony/validator": "^4.4",
                 "symfony/yaml": "^4.4.19",
-                "twig/twig": "^2.15",
+                "twig/twig": "^2.12.0",
                 "typo3/phar-stream-wrapper": "^3.1.3"
             },
             "conflict": {
-                "drush/drush": "<8.1.10",
-                "symfony/http-foundation": "4.4.42"
+                "drush/drush": "<8.1.10"
             },
             "replace": {
                 "drupal/action": "self.version",
@@ -3904,14 +3903,12 @@
                 "drupal/migrate_drupal_multilingual": "self.version",
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
-                "drupal/mysql": "self.version",
                 "drupal/node": "self.version",
                 "drupal/olivero": "self.version",
                 "drupal/options": "self.version",
                 "drupal/page_cache": "self.version",
                 "drupal/path": "self.version",
                 "drupal/path_alias": "self.version",
-                "drupal/pgsql": "self.version",
                 "drupal/quickedit": "self.version",
                 "drupal/rdf": "self.version",
                 "drupal/responsive_image": "self.version",
@@ -3921,7 +3918,6 @@
                 "drupal/settings_tray": "self.version",
                 "drupal/seven": "self.version",
                 "drupal/shortcut": "self.version",
-                "drupal/sqlite": "self.version",
                 "drupal/standard": "self.version",
                 "drupal/stark": "self.version",
                 "drupal/statistics": "self.version",
@@ -3996,6 +3992,9 @@
                     "lib/Drupal/Core/Cache/DatabaseCacheTagsChecksum.php",
                     "lib/Drupal/Core/Database/Connection.php",
                     "lib/Drupal/Core/Database/Database.php",
+                    "lib/Drupal/Core/Database/Driver/mysql/Connection.php",
+                    "lib/Drupal/Core/Database/Driver/pgsql/Connection.php",
+                    "lib/Drupal/Core/Database/Driver/sqlite/Connection.php",
                     "lib/Drupal/Core/Database/Statement.php",
                     "lib/Drupal/Core/Database/StatementInterface.php",
                     "lib/Drupal/Core/DependencyInjection/Container.php",
@@ -4012,9 +4011,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.4.1"
+                "source": "https://github.com/drupal/core/tree/9.3.17"
             },
-            "time": "2022-06-21T20:53:48+00:00"
+            "time": "2022-06-21T20:57:41+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -4797,17 +4796,17 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "8.x-2.6"
+                "reference": "8.x-2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "95cad4ce9620ccb4f02afa0e8b8bbf7c73fc5aac"
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "4d8606f9ab8dff8e484dd9417eafb6d97911892d"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -4824,8 +4823,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1624401306",
+                    "version": "8.x-2.7",
+                    "datestamp": "1655931710",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13226,16 +13225,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.4.41",
+            "version": "v4.4.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "27441220aebeb096b4eb8267acaaa7feb5e4266c"
+                "reference": "8e87b3ec23ebbcf7440d91dec8f7ca70dd591eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/27441220aebeb096b4eb8267acaaa7feb5e4266c",
-                "reference": "27441220aebeb096b4eb8267acaaa7feb5e4266c",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/8e87b3ec23ebbcf7440d91dec8f7ca70dd591eb3",
+                "reference": "8e87b3ec23ebbcf7440d91dec8f7ca70dd591eb3",
                 "shasum": ""
             },
             "require": {
@@ -13274,7 +13273,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v4.4.41"
+                "source": "https://github.com/symfony/http-foundation/tree/v4.4.42"
             },
             "funding": [
                 {
@@ -13290,7 +13289,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-21T07:22:34+00:00"
+            "time": "2022-05-17T11:15:18+00:00"
         },
         {
             "name": "symfony/http-kernel",
