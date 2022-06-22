@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19068ee753a0e5021d9b163cbfaf92fc",
+    "content-hash": "955156fbaee5ecc7e4952114ecf6c9db",
     "packages": [
         {
             "name": "ahebrank/eck_autolabel",
@@ -323,7 +323,7 @@
             "version": "v2.1.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/metafizzy/outlayer.git",
+                "url": "git@github.com:metafizzy/outlayer.git",
                 "reference": "bf31c5748bf84fcc2c553d1199a6ecaf0ebd9878"
             },
             "dist": {
@@ -814,16 +814,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.5",
+            "version": "4.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "67cea8e8e7656b74da651ea6f49321853996c0fd"
+                "reference": "3968070538761628546270935f0733a0cc408e1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/67cea8e8e7656b74da651ea6f49321853996c0fd",
-                "reference": "67cea8e8e7656b74da651ea6f49321853996c0fd",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/3968070538761628546270935f0733a0cc408e1f",
+                "reference": "3968070538761628546270935f0733a0cc408e1f",
                 "shasum": ""
             },
             "require": {
@@ -864,9 +864,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.5"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.6"
             },
-            "time": "2022-04-26T16:18:25+00:00"
+            "time": "2022-06-22T20:17:12+00:00"
         },
         {
             "name": "consolidation/config",
@@ -2900,26 +2900,26 @@
         },
         {
             "name": "drupal/captcha",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/captcha.git",
-                "reference": "8.x-1.2"
+                "reference": "8.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "e35a2ce42b652f833d140f7571d1eef0e06b0edc"
+                "url": "https://ftp.drupal.org/files/projects/captcha-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "d059a8c052246d28f62735e8a3e6912c508cd19f"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": ">=8.9 <11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1619673374",
+                    "version": "8.x-1.3",
+                    "datestamp": "1655312421",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3760,24 +3760,24 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.3.15",
+            "version": "9.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "c29310a4d08d5072d7f713da744c0831636b4779"
+                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/c29310a4d08d5072d7f713da744c0831636b4779",
-                "reference": "c29310a4d08d5072d7f713da744c0831636b4779",
+                "url": "https://api.github.com/repos/drupal/core/zipball/81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
+                "reference": "81489e8f0d5fdcd5d502b561f0f8cdf5ccdda614",
                 "shasum": ""
             },
             "require": {
-                "asm89/stack-cors": "^1.1",
-                "composer/semver": "^3.0",
-                "doctrine/annotations": "^1.12",
-                "doctrine/reflection": "^1.1",
-                "egulias/email-validator": "^2.1.22|^3.0",
+                "asm89/stack-cors": "^1.3",
+                "composer/semver": "^3.3",
+                "doctrine/annotations": "^1.13",
+                "doctrine/reflection": "^1.2",
+                "egulias/email-validator": "^2.1.22|^3.2",
                 "ext-date": "*",
                 "ext-dom": "*",
                 "ext-filter": "*",
@@ -3791,35 +3791,36 @@
                 "ext-spl": "*",
                 "ext-tokenizer": "*",
                 "ext-xml": "*",
-                "guzzlehttp/guzzle": "^6.5.6",
-                "laminas/laminas-diactoros": "^2.1",
-                "laminas/laminas-feed": "^2.12",
-                "masterminds/html5": "^2.1",
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
+                "laminas/laminas-diactoros": "^2.11",
+                "laminas/laminas-feed": "^2.17",
+                "masterminds/html5": "^2.7",
                 "pear/archive_tar": "^1.4.14",
                 "php": ">=7.3.0",
-                "psr/log": "^1.0",
+                "psr/log": "^1.1",
                 "stack/builder": "^1.0",
-                "symfony-cmf/routing": "^2.1",
+                "symfony-cmf/routing": "^2.3",
                 "symfony/console": "^4.4",
                 "symfony/dependency-injection": "^4.4",
                 "symfony/event-dispatcher": "^4.4",
                 "symfony/http-foundation": "^4.4.7",
                 "symfony/http-kernel": "^4.4",
                 "symfony/mime": "^5.4",
-                "symfony/polyfill-iconv": "^1.0",
-                "symfony/polyfill-php80": "^1.16",
+                "symfony/polyfill-iconv": "^1.25",
+                "symfony/polyfill-php80": "^1.25",
                 "symfony/process": "^4.4",
-                "symfony/psr-http-message-bridge": "^2.0",
+                "symfony/psr-http-message-bridge": "^2.1",
                 "symfony/routing": "^4.4",
                 "symfony/serializer": "^4.4",
                 "symfony/translation": "^4.4",
                 "symfony/validator": "^4.4",
                 "symfony/yaml": "^4.4.19",
-                "twig/twig": "^2.12.0",
+                "twig/twig": "^2.15",
                 "typo3/phar-stream-wrapper": "^3.1.3"
             },
             "conflict": {
-                "drush/drush": "<8.1.10"
+                "drush/drush": "<8.1.10",
+                "symfony/http-foundation": "4.4.42"
             },
             "replace": {
                 "drupal/action": "self.version",
@@ -3903,12 +3904,14 @@
                 "drupal/migrate_drupal_multilingual": "self.version",
                 "drupal/migrate_drupal_ui": "self.version",
                 "drupal/minimal": "self.version",
+                "drupal/mysql": "self.version",
                 "drupal/node": "self.version",
                 "drupal/olivero": "self.version",
                 "drupal/options": "self.version",
                 "drupal/page_cache": "self.version",
                 "drupal/path": "self.version",
                 "drupal/path_alias": "self.version",
+                "drupal/pgsql": "self.version",
                 "drupal/quickedit": "self.version",
                 "drupal/rdf": "self.version",
                 "drupal/responsive_image": "self.version",
@@ -3918,6 +3921,7 @@
                 "drupal/settings_tray": "self.version",
                 "drupal/seven": "self.version",
                 "drupal/shortcut": "self.version",
+                "drupal/sqlite": "self.version",
                 "drupal/standard": "self.version",
                 "drupal/stark": "self.version",
                 "drupal/statistics": "self.version",
@@ -3992,9 +3996,6 @@
                     "lib/Drupal/Core/Cache/DatabaseCacheTagsChecksum.php",
                     "lib/Drupal/Core/Database/Connection.php",
                     "lib/Drupal/Core/Database/Database.php",
-                    "lib/Drupal/Core/Database/Driver/mysql/Connection.php",
-                    "lib/Drupal/Core/Database/Driver/pgsql/Connection.php",
-                    "lib/Drupal/Core/Database/Driver/sqlite/Connection.php",
                     "lib/Drupal/Core/Database/Statement.php",
                     "lib/Drupal/Core/Database/StatementInterface.php",
                     "lib/Drupal/Core/DependencyInjection/Container.php",
@@ -4011,22 +4012,22 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.3.15"
+                "source": "https://github.com/drupal/core/tree/9.4.1"
             },
-            "time": "2022-06-01T15:45:43+00:00"
+            "time": "2022-06-21T20:53:48+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.3.15",
+            "version": "9.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "a9dd9def8891e1c388719474720b57d3fe929a2f"
+                "reference": "5f37a9e4008b34e3e4f6bb34ce0b3f7e5ec8984f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/a9dd9def8891e1c388719474720b57d3fe929a2f",
-                "reference": "a9dd9def8891e1c388719474720b57d3fe929a2f",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/5f37a9e4008b34e3e4f6bb34ce0b3f7e5ec8984f",
+                "reference": "5f37a9e4008b34e3e4f6bb34ce0b3f7e5ec8984f",
                 "shasum": ""
             },
             "require": {
@@ -4061,9 +4062,9 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.3.15"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.4.1"
             },
-            "time": "2022-02-24T17:40:56+00:00"
+            "time": "2022-06-19T16:14:23+00:00"
         },
         {
             "name": "drupal/crop",
@@ -6119,39 +6120,37 @@
         },
         {
             "name": "drupal/jquery_ui_touch_punch",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/jquery_ui_touch_punch.git",
-                "reference": "1.0.0"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/jquery_ui_touch_punch-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "8444a0ed897ba3d8e8876a9602ec8b3dca678cd1"
+                "url": "https://ftp.drupal.org/files/projects/jquery_ui_touch_punch-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "b43aad846b3c5a9501fb15f356144ff1e6bb2e24"
             },
             "require": {
                 "drupal/core": "^8 || ^9",
-                "drupal/jquery_ui": "^1.0"
-            },
-            "suggest": {
-                "furf/jquery-ui-touch-punch": "Required to use drupal/jquery_ui_touch_punch module."
+                "drupal/jquery_ui": "^1.0",
+                "politsin/jquery-ui-touch-punch": "^1.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1591893292",
+                    "version": "1.0.1",
+                    "datestamp": "1654879041",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -6168,8 +6167,7 @@
             ],
             "support": {
                 "source": "https://www.drupal.org/project/jquery_ui_touch_punch",
-                "issues": "https://www.drupal.org/project/issues/jquery_ui_touch_punch",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
+                "issues": "https://www.drupal.org/project/issues/jquery_ui_touch_punch"
             }
         },
         {
@@ -8834,16 +8832,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "10.6.2",
+            "version": "10.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "0a570a16ec63259eb71195aba5feab532318b337"
+                "reference": "d36bca3322555a6f94edc94439873afcde2bbe90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/0a570a16ec63259eb71195aba5feab532318b337",
-                "reference": "0a570a16ec63259eb71195aba5feab532318b337",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/d36bca3322555a6f94edc94439873afcde2bbe90",
+                "reference": "d36bca3322555a6f94edc94439873afcde2bbe90",
                 "shasum": ""
             },
             "require": {
@@ -8861,7 +8859,7 @@
                 "league/container": "^2.5 || ^3.4",
                 "php": ">=7.1.3",
                 "psr/log": "~1.0",
-                "psy/psysh": ">=0.6 <0.11",
+                "psy/psysh": "~0.6",
                 "symfony/event-dispatcher": "^3.4 || ^4.0",
                 "symfony/finder": "^3.4 || ^4.0 || ^5",
                 "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0",
@@ -8967,7 +8965,7 @@
                 "irc": "irc://irc.freenode.org/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/10.6.2"
+                "source": "https://github.com/drush-ops/drush/tree/10.6.1"
             },
             "funding": [
                 {
@@ -8975,20 +8973,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-15T17:09:54+00:00"
+            "time": "2021-10-05T11:14:14+00:00"
         },
         {
             "name": "egulias/email-validator",
-            "version": "3.2",
+            "version": "3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "a5ed8d58ed0c340a7c2109f587951b1c84cf6286"
+                "reference": "f88dcf4b14af14a98ad96b14b2b317969eab6715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a5ed8d58ed0c340a7c2109f587951b1c84cf6286",
-                "reference": "a5ed8d58ed0c340a7c2109f587951b1c84cf6286",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/f88dcf4b14af14a98ad96b14b2b317969eab6715",
+                "reference": "f88dcf4b14af14a98ad96b14b2b317969eab6715",
                 "shasum": ""
             },
             "require": {
@@ -9035,7 +9033,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/3.2"
+                "source": "https://github.com/egulias/EmailValidator/tree/3.2.1"
             },
             "funding": [
                 {
@@ -9043,7 +9041,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-28T22:19:18+00:00"
+            "time": "2022-06-18T20:57:19+00:00"
         },
         {
             "name": "embed/embed",
@@ -9514,24 +9512,24 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.6",
+            "version": "6.5.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f092dd734083473658de3ee4bef093ed77d2689c"
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f092dd734083473658de3ee4bef093ed77d2689c",
-                "reference": "f092dd734083473658de3ee4bef093ed77d2689c",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a52f0440530b54fa079ce76e8c5d196a42cad981",
+                "reference": "a52f0440530b54fa079ce76e8c5d196a42cad981",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.6.1",
+                "guzzlehttp/psr7": "^1.9",
                 "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.17.0"
+                "symfony/polyfill-intl-idn": "^1.17"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -9609,7 +9607,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/6.5.6"
+                "source": "https://github.com/guzzle/guzzle/tree/6.5.8"
             },
             "funding": [
                 {
@@ -9625,7 +9623,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-25T13:19:12+00:00"
+            "time": "2022-06-20T22:16:07+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -9713,16 +9711,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.8.5",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268"
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/337e3ad8e5716c15f9657bd214d16cc5e69df268",
-                "reference": "337e3ad8e5716c15f9657bd214d16cc5e69df268",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e98e3e6d4f86621a9b75f623996e6bbdeb4b9318",
+                "reference": "e98e3e6d4f86621a9b75f623996e6bbdeb4b9318",
                 "shasum": ""
             },
             "require": {
@@ -9743,7 +9741,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -9803,7 +9801,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/1.8.5"
+                "source": "https://github.com/guzzle/psr7/tree/1.9.0"
             },
             "funding": [
                 {
@@ -9819,7 +9817,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-03-20T21:51:18+00:00"
+            "time": "2022-06-20T21:43:03+00:00"
         },
         {
             "name": "harvesthq/chosen",
@@ -10230,16 +10228,16 @@
         },
         {
             "name": "laminas/laminas-stdlib",
-            "version": "3.10.0",
+            "version": "3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-stdlib.git",
-                "reference": "449c0405e182bfe77702604a474668fbb63e9907"
+                "reference": "0d669074845fc80a99add0f64025192f143ef836"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/449c0405e182bfe77702604a474668fbb63e9907",
-                "reference": "449c0405e182bfe77702604a474668fbb63e9907",
+                "url": "https://api.github.com/repos/laminas/laminas-stdlib/zipball/0d669074845fc80a99add0f64025192f143ef836",
+                "reference": "0d669074845fc80a99add0f64025192f143ef836",
                 "shasum": ""
             },
             "require": {
@@ -10285,7 +10283,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-06-09T08:43:49+00:00"
+            "time": "2022-06-10T14:49:09+00:00"
         },
         {
             "name": "league/container",
@@ -11383,6 +11381,44 @@
             "time": "2021-12-04T23:24:31+00:00"
         },
         {
+            "name": "politsin/jquery-ui-touch-punch",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/politsin/jquery-ui-touch-punch.git",
+                "reference": "2fe375e05821e267f0f3c0e063197f5c406896dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/politsin/jquery-ui-touch-punch/zipball/2fe375e05821e267f0f3c0e063197f5c406896dd",
+                "reference": "2fe375e05821e267f0f3c0e063197f5c406896dd",
+                "shasum": ""
+            },
+            "type": "drupal-library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Furfero",
+                    "email": "furf@furf.com"
+                }
+            ],
+            "description": "Extension to jQuery UI for mobile touch event support.",
+            "homepage": "http://touchpunch.furf.com/",
+            "keywords": [
+                "gestures",
+                "mobile",
+                "touch"
+            ],
+            "support": {
+                "issues": "https://github.com/politsin/jquery-ui-touch-punch/issues",
+                "source": "https://github.com/politsin/jquery-ui-touch-punch/tree/1.0"
+            },
+            "time": "2020-12-15T10:26:18+00:00"
+        },
+        {
             "name": "psr/cache",
             "version": "1.0.1",
             "source": {
@@ -11691,36 +11727,37 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.12",
+            "version": "v0.11.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a0d9981aa07ecfcbea28e4bfa868031cca121e7d"
+                "reference": "c23686f9c48ca202710dbb967df8385a952a2daf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a0d9981aa07ecfcbea28e4bfa868031cca121e7d",
-                "reference": "a0d9981aa07ecfcbea28e4bfa868031cca121e7d",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/c23686f9c48ca202710dbb967df8385a952a2daf",
+                "reference": "c23686f9c48ca202710dbb967df8385a952a2daf",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-tokenizer": "*",
-                "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
-                "php": "^8.0 || ^7.0 || ^5.5.9",
-                "symfony/console": "~5.0|~4.0|~3.0|^2.4.2|~2.3.10",
-                "symfony/var-dumper": "~5.0|~4.0|~3.0|~2.7"
+                "nikic/php-parser": "^4.0 || ^3.1",
+                "php": "^8.0 || ^7.0.8",
+                "symfony/console": "^6.0 || ^5.0 || ^4.0 || ^3.4",
+                "symfony/var-dumper": "^6.0 || ^5.0 || ^4.0 || ^3.4"
+            },
+            "conflict": {
+                "symfony/console": "4.4.37 || 5.3.14 || 5.3.15 || 5.4.3 || 5.4.4 || 6.0.3 || 6.0.4"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.2",
-                "hoa/console": "3.17.*"
+                "bamarni/composer-bin-plugin": "^1.2"
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
                 "ext-pdo-sqlite": "The doc command requires SQLite to work.",
                 "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
-                "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
-                "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
+                "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history."
             },
             "bin": [
                 "bin/psysh"
@@ -11728,7 +11765,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "0.10.x-dev"
+                    "dev-main": "0.11.x-dev"
                 }
             },
             "autoload": {
@@ -11760,9 +11797,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.12"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.5"
             },
-            "time": "2021-11-30T14:05:36+00:00"
+            "time": "2022-05-27T18:03:49+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -11867,16 +11904,16 @@
         },
         {
             "name": "sentry/sentry",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getsentry/sentry-php.git",
-                "reference": "5b611e3f09035f5ad5edf494443e3236bd5ea482"
+                "reference": "6d1a6ee29c558be373bfe08d454a3c116c02dd0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/5b611e3f09035f5ad5edf494443e3236bd5ea482",
-                "reference": "5b611e3f09035f5ad5edf494443e3236bd5ea482",
+                "url": "https://api.github.com/repos/getsentry/sentry-php/zipball/6d1a6ee29c558be373bfe08d454a3c116c02dd0d",
+                "reference": "6d1a6ee29c558be373bfe08d454a3c116c02dd0d",
                 "shasum": ""
             },
             "require": {
@@ -11905,7 +11942,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^2.19|3.4.*",
                 "http-interop/http-factory-guzzle": "^1.0",
-                "monolog/monolog": "^1.3|^2.0",
+                "monolog/monolog": "^1.6|^2.0|^3.0",
                 "nikic/php-parser": "^4.10.3",
                 "php-http/mock-client": "^1.3",
                 "phpbench/phpbench": "^1.0",
@@ -11922,7 +11959,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.5.x-dev"
+                    "dev-master": "3.6.x-dev"
                 }
             },
             "autoload": {
@@ -11956,7 +11993,7 @@
             ],
             "support": {
                 "issues": "https://github.com/getsentry/sentry-php/issues",
-                "source": "https://github.com/getsentry/sentry-php/tree/3.5.0"
+                "source": "https://github.com/getsentry/sentry-php/tree/3.6.0"
             },
             "funding": [
                 {
@@ -11968,7 +12005,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2022-05-19T07:14:12+00:00"
+            "time": "2022-06-09T20:33:39+00:00"
         },
         {
             "name": "stack/builder",
@@ -13189,16 +13226,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v4.4.42",
+            "version": "v4.4.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "8e87b3ec23ebbcf7440d91dec8f7ca70dd591eb3"
+                "reference": "27441220aebeb096b4eb8267acaaa7feb5e4266c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/8e87b3ec23ebbcf7440d91dec8f7ca70dd591eb3",
-                "reference": "8e87b3ec23ebbcf7440d91dec8f7ca70dd591eb3",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/27441220aebeb096b4eb8267acaaa7feb5e4266c",
+                "reference": "27441220aebeb096b4eb8267acaaa7feb5e4266c",
                 "shasum": ""
             },
             "require": {
@@ -13237,7 +13274,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v4.4.42"
+                "source": "https://github.com/symfony/http-foundation/tree/v4.4.41"
             },
             "funding": [
                 {
@@ -13253,7 +13290,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-17T11:15:18+00:00"
+            "time": "2022-04-21T07:22:34+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -16087,11 +16124,11 @@
         },
         {
             "name": "uky-web/uky_platform_dev_tools",
-            "version": "v1.0.16",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://gitlab+deploy-token-666097:HihAWDUfsqHg722xJwR8@gitlab.com/uky-web/university-web-platform/drupal-8/uky_platform_dev_tools.git",
-                "reference": "d55a864efed7b53b2c058dc91294ca620bbdd557"
+                "reference": "ae2a9aa16cc4e2fe37e9b4a4a85c3d5c2ddcda37"
             },
             "require": {
                 "drupal/devel": "^4.0",
@@ -16119,9 +16156,6 @@
                         },
                         "[web-root]/sites/development.services.yml": {
                             "path": "assets/development.services.yml"
-                        },
-                        "[project-root]/.gitpod.Dockerfile": {
-                            "path": "assets/.gitpod.Dockerfile"
                         },
                         "[project-root]/.gitpod.yml": {
                             "path": "assets/.gitpod.yml"
@@ -16193,7 +16227,7 @@
                 }
             ],
             "description": "This is used to install the development tools for the uky web platform.",
-            "time": "2022-06-01T17:38:52+00:00"
+            "time": "2022-06-22T20:15:48+00:00"
         }
     ],
     "aliases": [],
