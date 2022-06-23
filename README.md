@@ -40,6 +40,12 @@ If your site project uses the UK installation profie, it's recommended to allow 
 ### Scaffolding Files
 Some files managed in the Drupal Core project need to be installed outside of that package's directory, in the root of your site. This is accomplished with the `drupal/core-composer-scaffold` package. This package should be required alongside Drupal Core, and is required by the installation profile. If you remove the installation profile from this projec template, or add Drupal Core, you should also require the core-composer-scaffold package.
 
+### Troubleshooting
+USE WITH CAUTION: If you run into any enviroment or container related issues, where it seems that there is a enviroment setting is cached, attempt these steps to get the project up and running:
+`ddev poweroff`
+`docker rm -f $(docker ps -aq) # stop any other random containers that may be running`
+`docker rmi -f $(docker images -q) # You might have to repeat this a time or two to get rid of all images`
+Completely stop and restart the gitpod workspace.
 
 ## FAQ
 
