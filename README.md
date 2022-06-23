@@ -42,10 +42,10 @@ Some files managed in the Drupal Core project need to be installed outside of th
 
 ### Troubleshooting
 USE WITH CAUTION: If you run into any enviroment or container related issues, where it seems that there is a enviroment setting is cached, attempt these steps to get the project up and running:
-`ddev poweroff`
-`docker rm -f $(docker ps -aq) # stop any other random containers that may be running`
-`docker rmi -f $(docker images -q) # You might have to repeat this a time or two to get rid of all images`
-Completely stop and restart the gitpod workspace.
+1. `ddev poweroff`
+2. `docker rm -f $(docker ps -aq) # stop any other random containers that may be running`
+3. `docker rmi -f $(docker images -q) # You might have to repeat this a time or two to get rid of all images`
+4. Completely stop and restart the gitpod workspace.
 
 ## FAQ
 
