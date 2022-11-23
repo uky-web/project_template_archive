@@ -9,22 +9,22 @@
             "email": "universitywebservices@l.uky.edu"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://composer.uky.dev"
         },
-        {
+        "1": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-            {
+        "2": {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ],    
+    },
     "require-dev": {
-	    "uky-web/uky_platform_dev_tools": "^1.1.2"
+        "uky-web/uky_platform_dev_tools": "^1.1.2"
     },
     "require": {
         "php": ">=7.0.8",
@@ -34,6 +34,7 @@
         "drupal/console": "^1.0.2",
         "drupal/core-composer-scaffold": "^8.8.0 | ^9.2",
         "drush/drush": "^9.7.1 | ^10.0.0",
+        "foxy/foxy": "^1.2",
         "oomphinc/composer-installers-extender": "^2.0",
         "uky-web/uky_base": "^2.0.2",
         "vlucas/phpdotenv": "^4.0",
@@ -51,6 +52,21 @@
         "optimize-autoloader": true,
         "gitlab-token": {
             "gitlab.com": "Zhqzs6MLWDrAyyR9fif4"
+        },
+        "allow-plugins": {
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/console-extend-plugin": true,
+            "oomphinc/composer-installers-extender": true,
+            "foxy/foxy": true
+        },
+        "foxy": {
+            "enable-packages": [
+                "uky-web/*"
+            ],
+            "manager": "npm"
         }
     },
     "autoload": {
@@ -70,13 +86,11 @@
         ],
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "cd web/themes/custom/ukd8 && npm install",
-	        "@dev-tools-permissions-fix"
+            "@dev-tools-permissions-fix"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
-            "cd web/themes/custom/ukd8 && npm install",
-	        "@dev-tools-permissions-fix"
+            "@dev-tools-permissions-fix"
         ],
         "dev-tools-permissions-fix": [
             "chmod 755 .ddev/run-phpstorm.sh",
@@ -88,7 +102,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-    	"drupal-scaffold": {
+        "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             },
@@ -106,7 +120,7 @@
             "drupal-custom-profile",
             "drupal-custom-module",
             "drupal-custom-theme"
-	],
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
