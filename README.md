@@ -1,7 +1,5 @@
 # UKY Web Platform Project Template
 
-mirror again
-
 This project template provides a starter kit for managing your site dependencies with [Composer](). It is a variation of the official [Drupal Composer](https://github.com/drupal-composer/drupal-project) Drupal project starter kit, with additions and modifications specific to the Univeristy of Kentucky web platform. 
 
 ## UK Specific Modifications
