@@ -24,7 +24,7 @@
         }
     ],    
     "require-dev": {
-	    "uky-web/uky_platform_dev_tools": "^1.1.2"
+	    "uky-web/uky_platform_dev_tools": "^1.1.7"
     },
     "require": {
         "php": ">=7.0.8",
@@ -35,7 +35,7 @@
         "drupal/core-composer-scaffold": "^8.8.0 | ^9.2",
         "drush/drush": "^9.7.1 | ^10.0.0",
         "oomphinc/composer-installers-extender": "^2.0",
-        "uky-web/uky_base": "^2.0.2",
+        "uky-web/uky_base": "^2.1.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
