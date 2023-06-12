@@ -4,9 +4,6 @@
     "ghcr.io/devcontainers/features/docker-in-docker:1": {},
     "ghcr.io/ddev/ddev/install-ddev:latest": {}
   },
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
-  },
   "portsAttributes": {
     "3306": {
       "label": "database"
