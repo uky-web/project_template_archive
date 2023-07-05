@@ -3,6 +3,9 @@ image: drud/ddev-gitpod-base:latest
 tasks:
   - name: ddev-gitpod-launcher
     init: |
+      mkdir ~/.npm-global
+      npm config set prefix '~/.npm-global'
+      npm install -g https://github.com/uky-web/quarry-cli.git
       ddev start -y
       ddev composer global config allow-plugins true
       ddev composer config allow-plugins.composer/installers true
