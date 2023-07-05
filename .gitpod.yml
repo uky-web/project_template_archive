@@ -2,6 +2,11 @@ image: drud/ddev-gitpod-base:latest
 
 tasks:
   - name: ddev-gitpod-launcher
+    before: |
+      mkdir ~/.npm-global
+      npm config set prefix '~/.npm-global'
+      npm install -g https://github.com/uky-web/quarry-cli.git
+      echo 'export PATH="%s:$PATH"\n' "/home/gitpod/.npm-global/bin" >> $HOME/.bashrc
     init: |
       ddev start -y
       ddev composer global config allow-plugins true
@@ -13,7 +18,6 @@ tasks:
       ddev composer config allow-plugins.oomphinc/composer-installers-extender true
       ddev composer install
       .ddev/uk-site-install.sh
-    before: printf 'export PATH="%s:$PATH"\n' "/home/gitpod/.npm-global/bin" >> $HOME/.bashrc && exit
     command: |
       ddev start -y
       gp await-port 8080 && gp preview $(gp url 8080)
