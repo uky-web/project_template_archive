@@ -30,3 +30,6 @@
 
 # Ignore Stage File Proxy config file since it is only needed for gitpod.
 /config/sync/stage_file_proxy.settings.yml
+
+# Ignore quarry docker-compose file for ddev
+/.ddev/docker-compose.quarry.yaml

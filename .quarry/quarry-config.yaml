@@ -1,0 +1,22 @@
+
+root-app:
+  name: "platform-dev-site"
+  hooks:  
+    install: "hooks/project-template/install.sh"
+packages:
+  - name: uky_platform_dev_tools
+    gitUrl: https://github.com/uky-web/uky_platform_dev_tools.git
+    branch: 2-remove-gitpodyaml-from-scaffolding
+  - name: limestone
+    gitUrl: https://github.com/uky-web/limestone.git
+    branch: 1.x
+    hooks:
+      install: hooks/limestone/install.sh
+  - name: uky_base_theme
+    gitUrl: https://github.com/uky-web/uky_base_theme.git
+    branch: 2.0.x
+    hooks:
+      install: hooks/uky_base_theme/install.sh
+    
+ports:
+  - 3000:3000
