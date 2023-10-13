@@ -29,10 +29,8 @@
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal/console": "^1.0.2",
-        "drupal/core-composer-scaffold": "^8.8.0 | ^9.2",
         "oomphinc/composer-installers-extender": "^2.0",
-        "uky-web/uky_base": "^2.1.0",
+        "uky-web/uky_base": "^3.0.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
