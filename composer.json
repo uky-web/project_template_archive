@@ -24,13 +24,13 @@
         }
     ],    
     "require-dev": {
-	    "uky-web/uky_platform_dev_tools": "^1.1.7"
+	    "uky-web/uky_platform_dev_tools": "dev-october-1"
     },
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "oomphinc/composer-installers-extender": "^2.0",
-        "uky-web/uky_base": "^3.0.0",
+        "uky-web/uky_base": "dev-andys-test",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
