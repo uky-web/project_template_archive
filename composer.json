@@ -9,28 +9,40 @@
             "email": "universitywebservices@l.uky.edu"
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "uky-web/uky_platform_dev_tools": {
+            "type": "path",
+            "url": "/var/www/html/packages/uky-web/uky_platform_dev_tools"
+        },
+        "uky-web/ukd8_customizations": {
+            "type": "path",
+            "url": "/var/www/html/packages/uky-web/ukd8_customizations"
+        },
+        "uky-web/uky_base": {
+            "type": "path",
+            "url": "/var/www/html/packages/uky-web/uky_base"
+        },
+        "uky-web/ukd8": {
+            "type": "path",
+            "url": "/var/www/html/packages/uky-web/ukd8"
+        },
+        "0": {
             "type": "composer",
             "url": "https://composer.uky.dev"
         },
-        {
+        "1": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-            {
+        "2": {
             "type": "composer",
             "url": "https://asset-packagist.org"
         }
-    ],    
-    "require-dev": {
-	    "uky-web/uky_platform_dev_tools": "^1.1.7"
     },
     "require": {
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
         "oomphinc/composer-installers-extender": "^2.0",
-        "uky-web/uky_base": "^3.0.0",
         "vlucas/phpdotenv": "^4.0",
         "webflo/drupal-finder": "^1.0.0",
         "zaporylie/composer-drupal-optimizations": "^1.0"
@@ -48,7 +60,13 @@
             "gitlab.com": "Zhqzs6MLWDrAyyR9fif4"
         },
         "allow-plugins": {
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "composer/installers": true,
+            "drupal/core-composer-scaffold": true,
+            "cweagans/composer-patches": true,
+            "zaporylie/composer-drupal-optimizations": true,
+            "drupal/console-extend-plugin": true,
+            "oomphinc/composer-installers-extender": true
         }
     },
     "autoload": {
@@ -69,12 +87,12 @@
         "post-install-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
             "cd web/themes/custom/ukd8 && npm install",
-	        "@dev-tools-permissions-fix"
+            "@dev-tools-permissions-fix"
         ],
         "post-update-cmd": [
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles",
             "cd web/themes/custom/ukd8 && npm install",
-	        "@dev-tools-permissions-fix"
+            "@dev-tools-permissions-fix"
         ],
         "dev-tools-permissions-fix": [
             "chmod 755 .ddev/run-phpstorm.sh",
@@ -86,7 +104,7 @@
         "patchLevel": {
             "drupal/core": "-p2"
         },
-    	"drupal-scaffold": {
+        "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
             },
@@ -104,7 +122,7 @@
             "drupal-custom-profile",
             "drupal-custom-module",
             "drupal-custom-theme"
-	],
+        ],
         "installer-paths": {
             "web/core": [
                 "type:drupal-core"
@@ -136,5 +154,11 @@
                 "type:bower-asset"
             ]
         }
+    },
+    "require-dev": {
+        "uky-web/ukd8": "dev-october-1 as 3.0.0",
+        "uky-web/ukd8_customizations": "dev-october-1 as 3.0.0",
+        "uky-web/uky_base": "dev-jasons-test as 3.0.0",
+        "uky-web/uky_platform_dev_tools": "dev-october-1 as 3.0.0"
     }
 }
