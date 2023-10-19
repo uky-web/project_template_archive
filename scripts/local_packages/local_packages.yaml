@@ -18,8 +18,8 @@ packages:
   -
     package: "uky-web/uky_base"
     git: "https://github.com/uky-web/uky_base.git"
-    branch: "jasons-test"
-    composername: "dev-jasons-test"
+    branch: "october-1"
+    composername: "dev-october-1"
     version: 3.0.0
   -
     package: "uky-web/ukd8_customizations"
