@@ -1,15 +1,22 @@
 #!/bin/bash
 set -e
+# Unzip the reference DB
+gunzip reference/sanitized.sql
 # Import the reference DB
 if [ -f "reference/sanitized.sql" ]
   then
     echo "Reference database found. Importing..."
     ddev import-db --src=reference/sanitized.sql
+    # gzip the reference DB
+    gzip reference/sanitized.sql
+    # discard changes to gzip reference DB
+    git checkout reference/sanitized.sql.gz
     if ! [ -f "web/sites/default/settings.php" ]
       then
         echo "Generating settings.php file..."
         cp web/sites/default/default.settings.php web/sites/default/settings.php
     fi
+    chmod +x scripts/local_packages/local_packages.sh
     mv config/sync/stage_file_proxy.settings.yml config/
     ddev drush cr
     ddev drush cim -y
