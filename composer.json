@@ -48,7 +48,13 @@
       "gitlab.com": "Zhqzs6MLWDrAyyR9fif4"
     },
     "allow-plugins": {
-      "php-http/discovery": true
+      "php-http/discovery": true,
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true,
+      "cweagans/composer-patches": true,
+      "zaporylie/composer-drupal-optimizations": true,
+      "drupal/console-extend-plugin": true,
+      "oomphinc/composer-installers-extender": true
     }
   },
   "autoload": {
